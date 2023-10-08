@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/admin/adminAddNews.css">
+    <link rel="stylesheet" href="../style/admin/modals/modalAddNews.css">
+    <title>INDEX DRIVE - управление новостями</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Admin ID:#2325</b></p>
+                </div>
+            </div>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="modalAddNews" onclick="addNewsActive()">
+    <div class="modalAddNewsWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" onclick="addNewsRemove()" alt="">
+        <h6 class="modalAddNewsWindowHead">Добавление новостей</h6>
+        <form method="post" class="formAddNews">
+             <div class="form-floatingAddNews">
+                <label for="floatingInput">Заголовок</label>
+                <input type="text" class="form-inputAddNews" name="" id="floatingInput"
+                    placeholder="Введите заголовок">
+                <img class="form-imgAddNews" src="../img/icon/iconTitle.svg" alt="">
+            </div>
+
+            <div class="form-floatingAddNews">
+                <label for="floatingInput">Описание</label>
+                <textarea class="form-inputAddNews h-form-inputAddNews" name="" id="floatingInput"
+                    placeholder="Введите описание"></textarea>
+                <img class="form-imgAddNews" src="../img/icon/iconDesc.svg" alt="">
+            </div>
+
+            <label class="input-file">
+                <span id="textValue" class="input-file-text"></span>
+                <input type="file" name="file" onchange="showFile(this)">
+                <span class="input-file-btn">Загрузить фото</span>
+            </label>
+            
+            <div class="buttonAddNews">
+                <button type="submit">Добавить новость</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="adminPanel.html" class="logo"></a>
+            <div class="nav-text">
+                <div class="nav-user-icon" onclick="ProfileModalActive()">admin</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <h6>Управление новостями</h6>
+
+            <div class="centerSearch">
+                <div class="bankCardsInputAndButton">
+                    <input type="text" class="input-form-contrl-bank" name="number" id="floatingInputBankCard"
+                        placeholder="Поиск" value="">
+                    <div class="buttonChangeCard" onclick="cardsModalActive()">
+                        <img src="../img/button/search.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="addNewNews">
+                <button class="but-addNewNews" onclick="addNewsActive()" type="submit"><img src="../img/button/plus.svg" alt=""></button>
+                <label>Добавить новую новость</label>
+            </div>
+
+            <div class="news">
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news1.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5 class="titleNews">В России вынесли первый приговор за продажу аккаунтов каршеринга</h5>
+                        <p> В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга.
+                            Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина на 50 тыс.
+                            рублей.
+                            Как сообщает РАПСИ со ссылкой на Объединенную пресс-службу судов Петербурга, 21-летний
+                            молодой человек обвинялся по части 2 статьи 272 УК РФ (неправомерный доступ к компьютерной
+                            информации, совершенный из корыстной заинтересованности).</p>
+                        <p class="date">12.03.20</p>
+                        <div class="deleteNews">
+                            <button class="but-deleteNews" type="submit"><img src="../img/button/minus.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news2.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5 class="titleNews">Программа поддержки каршеринга не заработала из-за российского
+                            телематического оборудования</h5>
+                        <p>25 августа 2020 года стало известно о том, что программа поддержки каршеринга, которая была
+                            анонсирована ещё в апреле на совещании у президента РФ Владимира Путина, так и не
+                            заработала.</p>
+                        <p class="date">12.03.20</p>
+                        <div class="deleteNews">
+                            <button class="but-deleteNews" type="submit"><img src="../img/button/minus.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news3.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5 class="titleNews">Мошенничество с данными клиентов</h5>
+                        <p>По сообщениям на июль 2020 г каршеринг становится отличным помощником для мошенников. С
+                            помощью селфи клиентов с паспортом на людей берут кредиты в микрофинансовых компаниях.</p>
+                        <p class="date">12.03.20</p>
+                        <div class="deleteNews">
+                            <button class="but-deleteNews" type="submit"><img src="../img/button/minus.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news4.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5 class="titleNews">Столичный каршеринг обвинил Роспотребнадзор в блокировке деятельности</h5>
+                        <p>Каршеринг не может возобновить работу по докоронавирусному сценарию из-за отсутствия
+                            предписаний Роспотребнадзора. Представители сервисов обвинили ведомство в блокировке их
+                            деятельности и 9 июня направили коллективное обращение.</p>
+                        <p class="date">12.03.20</p>
+                        <div class="deleteNews">
+                            <button class="but-deleteNews" type="submit"><img src="../img/button/minus.svg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="../js/frontend/admin/adminPanel.js"></script>
+<script src="../js/frontend/admin/addNews.js"></script>
+
+</html>

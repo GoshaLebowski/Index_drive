@@ -1,0 +1,32 @@
+@media (max-width: 414px) {
+    .modalUserProfileWindowInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modalUserProfileWindowInfoList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalUserProfileWindowInfoAvatar {
+        margin-right: 0px;
+    }
+
+    .modalUserProfileWindowInfoListName {
+        font-size: 21px;
+    }
+
+    .modalUserProfileWindowInfoListNumber {
+        font-size: 23px;
+    }
+
+    .modalUserProfileWindowInfoListEditProfile {
+        font-size: 16.2px;
+    }
+}

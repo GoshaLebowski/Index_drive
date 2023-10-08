@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/admin/addingAnAuto.css">
+    <link rel="stylesheet" href="../style/admin/modals/modalAddAnAuto.css">
+    <title>INDEX DRIVE - добавление авто</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Admin ID:#2325</b></p>
+                </div>
+            </div>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="modalAddingAnAuto" onclick="addAnAutoActive()">
+    <div class="modalAddingAnAutoWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="" onclick="addAnAutoRemove()">
+        <h6 class="modalAddingAnAutoWindowHead">Добавление авто</h6>
+        <form method="post" class="formAddingAnAuto">
+            <div class="formJc-Sb">
+                <div class="formAddingAnAutoPartOne">
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddNameCar">Название авто</label>
+                        <input type="text" class="form-inputAddingAnAuto formWidth" name="" id="floatingInputAddNameCar"
+                            placeholder="Введите название авто">
+                        <img class="form-imgAddingAnAuto" src="../img/icon/iconTitle.svg" alt="">
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddMarkCar">Марка автомобиля</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputAddMarkCar">
+                            <option value="" hidden disabled selected>Выберите марку</option>
+                            <option value="">Ferrari</option>
+                            <option value="">Buick</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddModalCar">Модель автомобиля</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputAddModalCar">
+                            <option value="" hidden disabled selected>Выберите марку</option>
+                            <option value="">Berlinetta</option>
+                            <option value="">Avista</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddStateNumber">Госномер</label>
+                        <input type="text" class="form-inputAddingAnAuto formWidth" name="" id="floatingInputAddStateNumber"
+                            placeholder="Введите госномер">
+                        <img class="form-imgAddingAnAuto" src="../img/icon/iconStateNumber.svg" alt="">
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddBookingPerDay">Стоимость бронирования за день</label>
+                        <input type="text" class="form-inputAddingAnAuto formWidth" name="" id="floatingInputAddBookingPerDay"
+                            placeholder="Введите стоимость бронирование">
+                        <img class="form-imgAddingAnAuto" src="../img/icon/amountDays.svg" alt="">
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddPhoto">Загрузка фото</label>
+                        <label class="input-file">
+                            <span id="textValue" class="input-file-text"></span>
+                            <input type="file" name="file" onchange="showFile(this)" id="floatingInputAddPhoto">
+                            <span class="input-file-btn">Загрузить фото</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="formAddingAnAutoPartTwo">
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddClass">Класс автомобиля</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputAddClass">
+                            <option value="" hidden disabled selected>Выберите класс</option>
+                            <option value="">Эконом</option>
+                            <option value="">Премиум</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddStatus">Статус</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputAddStatus">
+                            <option value="" hidden disabled selected>Выберите статус</option>
+                            <option value="">В наличии</option>
+                            <option value="">Бронирована</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddBranch">Филиал</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputAddBranch">
+                            <option value="" hidden disabled selected>Выберите филиал</option>
+                            <option value="">Здесь адреса филиалов</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputAddDesc">Описание</label>
+                        <textarea class="form-inputAddingAnAuto formWidth h-form-inputAddingAnAuto" name=""
+                            id="floatingInputAddDesc" placeholder="Введите описание"></textarea>
+                        <img class="form-imgAddingAnAuto" src="../img/icon/iconDesc.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonAddingAnAuto">
+                <button type="submit">Добавить авто</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="editModalAuto" onclick="editAutoActive()">
+    <div class="modalEditAutoWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="" onclick="editAutoRemove()">
+        <h6 class="modalAddingAnAutoWindowHead">Редактирование авто</h6>
+        <label class="idAutoEdit">ID: #3473758</label>
+        <div class="imgEditAuto">
+            <img src="../img/booking-img/1.png" alt="">
+        </div>
+        <form method="post" class="formAddingAnAuto">
+            <div class="formJc-Sb">
+                <div class="formAddingAnAutoPartOne">
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditNameCar">Название авто</label>
+                        <input type="text" class="form-inputAddingAnAuto formWidth" name="" id="floatingInputEditNameCar"
+                            placeholder="Введите название авто" value="Ferrari F12 Berlinetta">
+                        <img class="form-imgAddingAnAuto" src="../img/icon/iconTitle.svg" alt="">
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditMarkCar">Марка автомобиля</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputEditMarkCar">
+                            <option value="" hidden disabled selected>Выберите марку</option>
+                            <option value="" selected>Ferrari</option>
+                            <option value="">Buick</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditModalCar">Модель автомобиля</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputEditModalCar">
+                            <option value="" hidden disabled selected>Выберите модель</option>
+                            <option value="" selected>Berlinetta</option>
+                            <option value="">Avista</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditStateNumber">Госномер</label>
+                        <input type="text" class="form-inputAddingAnAuto formWidth" name="" id="floatingInputEditStateNumber"
+                            placeholder="Введите госномер" value="Л228ОХ">
+                        <img class="form-imgAddingAnAuto" src="../img/icon/iconStateNumber.svg" alt="">
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditBookingPerDay">Стоимость бронирования за день</label>
+                        <input type="text" class="form-inputAddingAnAuto formWidth" name="" id="floatingInputEditBookingPerDay"
+                            placeholder="Введите стоимость бронирование" value="9.900">
+                        <img class="form-imgAddingAnAuto" src="../img/icon/amountDays.svg" alt="">
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditPhoto">Загрузка фото</label>
+                        <label class="input-file">
+                            <span id="textValue" class="input-file-text"></span>
+                            <input type="file" name="file" onchange="showFile(this)" id="floatingInputEditPhoto">
+                            <span class="input-file-btn">Загрузить фото</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="formAddingAnAutoPartTwo">
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditClassCar">Класс автомобиля</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputEditClassCar"> 
+                            <option value="" hidden disabled selected>Выберите класс</option>
+                            <option value="">Эконом</option>
+                            <option value="" selected>Премиум</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditStatus">Статус</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputEditStatus">
+                            <option value="" hidden disabled selected>Выберите статус</option>
+                            <option value="" selected>В наличии</option>
+                            <option value="">Бронирована</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditBranch">Филиал</label>
+                        <select class="form-selectAddingAnAuto formWidthSelect" id="floatingInputEditBranch">
+                            <option value="" hidden disabled selected>Выберите филиал</option>
+                            <option value="" selected>Здесь адреса филиалов</option>
+                        </select>
+                    </div>
+
+                    <div class="form-floatingAddingAnAuto">
+                        <label for="floatingInputEditDesc">Описание</label>
+                        <textarea class="form-inputAddingAnAuto formWidth h-form-inputAddingAnAuto" name=""
+                            id="floatingInputEditDesc"
+                            placeholder="Введите описание">Суперкар появился в 2012 году, производитель Ferrari (Феррари), располагающийся в стране Италия. Двигатель Ferrari F12 Berlinetta объёмом 6262 см³ развивает мощность 740 лошадиных сил, что позволяет автомобилю разгоняться до 100 километров в час за 3.1 секунды и развивать максимальную скорость 340 км/ч. Цена Ferrari F12 Berlinetta - 320 000 $ или 21 120 000 ₽.</textarea>
+                        <img class="form-imgAddingAnAuto" src="../img/icon/iconDesc.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonAddingAnAuto">
+                <button type="submit">Редактировать</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="adminPanel.html" class="logo"></a>
+            <div class="nav-text">
+                <div class="nav-user-icon" onclick="ProfileModalActive()">admin</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <h6>Добавление авто</h6>
+
+            <div class="centerSearch">
+                <div class="bankCardsInputAndButton">
+                    <input type="text" class="input-form-contrl-bank" name="number" id="floatingInputBankCard"
+                        placeholder="Поиск" value="">
+                    <div class="buttonChangeCard" onclick="cardsModalActive()">
+                        <img src="../img/button/search.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonNavigateAddAnAuto">
+                <div class="buttonNavigateDataAuto">
+                    <button class="but-navigateDataAuto" type="submit"><img src="../img/button/plus.svg" alt=""
+                            onclick="addAnAutoActive()"></button>
+                    <label>Добавить авто</label>
+                </div>
+
+                <!-- <div class="buttonNavigateDataAuto ml">
+                    <button class="but-navigateDataAuto" type="submit"><img src="../img/button/edit.svg" alt=""
+                            onclick="editAutoActive()"></button>
+                    <label>Редактировать</label>
+                </div> -->
+
+                <div class="aNavigateDataAuto ml">
+                    <a href="additionalSettings.html" class="a-navigateDataAuto"><img src="../img/button/gearWheel.svg"
+                            alt=""></a>
+                    <label>Доп. настройка</label>
+                </div>
+            </div>
+
+
+            <div class="bookingBlock">
+                <p class="MyOrderHeaderTitle styleIdAuto mr-l-id">
+                    ID: #3473758
+                </p>
+                <div class="bookingInfo">
+                    <div class="bookingInfoImg">
+                        <img src="../img/booking-img/1.png" alt="">
+                    </div>
+                    <div class="bookingInfoDesc">
+                        <div class="nameOfTheCar">
+                            Ferrari F12 Berlinetta
+                        </div>
+                        <div class="licensePlateNumberOfTheCar">
+                            Госномер: Л228ОХ
+                        </div>
+                        <div class="branch">
+                            Филиал: Росстовский
+                        </div>
+                        <div class="classAuto">
+                            Класс: Премиум
+                        </div>
+                        <div class="statusAuto">
+                            Статус: В наличии
+                        </div>
+                        <div class="сostOfBooking">
+                            <span>Стоимость бронирования за день:</span> 9.900 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="MyOrderDescription">
+                    <div class="MyOrderDescriptionPadding">
+                        Суперкар появился в 2012 году, производитель Ferrari (Феррари), располагающийся в стране
+                        Италия. Двигатель Ferrari F12 Berlinetta объёмом 6262 см³ развивает мощность 740 лошадиных
+                        сил, что позволяет автомобилю разгоняться до 100 километров в час за 3.1 секунды и развивать
+                        максимальную скорость 340 км/ч. Цена Ferrari F12 Berlinetta - 320 000 $ или 21 120 000 ₽.
+                    </div>
+                </div>
+                <div class="buttonsEdDel">
+                    <div class="distanceEdDel">
+                        <a class="buttonEditAuto" href="">
+                            <button class="but-navigateDataAuto"><img src="../img/button/edit.svg" alt=""></button>
+                        </a>
+                        <a class="buttonDeleteAuto" href="">
+                            <button class="but-navigateDataAuto"><img src="../img/button/minus.svg" alt=""></button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bookingBlock">
+                <p class="MyOrderHeaderTitle styleIdAuto mr-l-id">
+                    ID: #2537432
+                </p>
+                <div class="bookingInfo">
+                    <div class="bookingInfoImg">
+                        <img src="../img/booking-img/2.png" alt="">
+                    </div>
+                    <div class="bookingInfoDesc">
+                        <div class="nameOfTheCar">
+                            Buick Avista
+                        </div>
+                        <div class="licensePlateNumberOfTheCar">
+                            Госномер: Л229ОХ
+                        </div>
+                        <div class="branch">
+                            Филиал: Росстовский
+                        </div>
+                        <div class="classAuto">
+                            Класс: Премиум
+                        </div>
+                        <div class="statusAuto">
+                            Статус: В наличии
+                        </div>
+                        <div class="сostOfBooking">
+                            <span>Стоимость бронирования за день:</span> 9.900 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="MyOrderDescription">
+                    <div class="MyOrderDescriptionPadding">
+                        Концепт Buick Avista был представлен в начале 2016 года на Детройтском автосалоне.
+                        Заднеприводное купе создано на основе укороченной платформы флагманского седана Cadillac CT6. От
+                        этого же автомобиля позаимствован битурбомотор V6 3.0 (405 л. с.) нового семейства GM High
+                        Feature и восьмиступенчатый «автомат». В салоне выставочной машины — четыре полноценных места,
+                        сенсорные экраны и панели.
+                        Возможность появления серийного варианта модели Buick Avista в ближайшие годы не исключается.
+                    </div>
+                </div>
+                <div class="buttonsEdDel">
+                    <div class="distanceEdDel">
+                        <div class="buttonEditAuto">
+                            <button class="but-navigateDataAuto" type="submit"><img src="../img/button/edit.svg"
+                                    alt=""></button>
+                        </div>
+                        <div class="buttonDeleteAuto">
+                            <button class="but-navigateDataAuto" type="submit"><img src="../img/button/minus.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="../js/frontend/admin/adminPanel.js"></script>
+<script src="../js/frontend/admin/addingAnAuto.js"></script>
+
+</html>

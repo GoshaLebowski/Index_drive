@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/user.css">
+    <link rel="stylesheet" href="../style/history.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/modals/modalCard.css">
+    <!-- <link rel="stylesheet" href="../style/modals/errors&done.css"> -->
+    <!-- <link rel="stylesheet" href="../style/adaptive/modals/errors&done.css"> -->
+    <link rel="stylesheet" href="../style/adaptive/history.css">    
+    <link rel="stylesheet" href="../style/adaptive/modals/modalNav.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/userModal.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/bankCard.css">
+    <link rel="stylesheet" href="../style/adaptive/nav.css"> 
+    <link rel="stylesheet" href="../style/adaptive/footer.css">
+    <link rel="icon" href="../img/logo/icon.png">
+    <title>INDEX DRIVE - история</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoAvatar">Г</div>
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Здравствуйте, Георгий</b></p>
+                    <p class="modalUserProfileWindowInfoListNumber">+79999999999</p>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/iconUser.svg" alt="">Редактировать профиль</a>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/scores.svg" alt="">Баллы: 5</a>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                </div>
+            </div>
+            <a class="modalUserProfileWindowButton"><button onclick="cardsModalActive()">Банковские карты</button></a>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="selectBankCards" onclick="cardsModalActive()">
+    <div class="modalWindowCards" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form-cards" onclick="removeModalActive()" alt="">
+        <h6 class="modalWindowCardsHead">Список банковских карт</h6>
+        <form method="post" name="LogForm" class="auth-form-cards">
+            <div class="form-floating-cards mb-cards">
+                <img class="form-floating-cards-img" src="../img/cards/mastercard.png" alt="">
+                <div class="bankCardsInputAndButton">
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input id-check" name="rad">
+                        <div class="rad-design"></div>
+                    </label>
+                    <input type="text" class="form-control-cards my-input-card inputDisabled" name="bankCard_1"
+                        id="bankCard_1" disabled value="****4444">
+                    <button class="buttonDeleteCard"><img src="../img/button/minus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="form-floating-cards mb-cards">
+                <img class="form-floating-cards-img" src="../img/cards/visa.png" alt="">
+                <div class="bankCardsInputAndButton">
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input id-check" name="rad">
+                        <div class="rad-design"></div>
+                    </label>
+                    <input type="text" class="form-control-cards my-input-card inputDisabled" name="bankCard_2"
+                        id="bankCard_2" disabled value="****3463">
+                    <button class="buttonDeleteCard"><img src="../img/button/minus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="buttonsCards">
+                <div class="form-button-add-a-card" onclick="cardModalCreate()">
+                    <span>Добавить карту</span>
+                </div>
+
+                <div class="form-button-select-a-card">
+                    <button type="submit">Выбрать карту</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="createBankCards" onclick="cardModalCreate()">
+    <div class="modalWindowCardsCreate" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form-cards" onclick="cardModalRemove()" alt="">
+        <h6 class="modalWindowCardsHead">Список банковских карт</h6>
+        <form method="post" name="LogForm" class="auth-form-cards">
+            <div class="full-content-card-creation">
+                <div class="f-c-gridContainer">
+                    <div class="img-bankCard">
+                        <img class="imgCardFront" src="../img/cards/front part of the bank card.png">
+                        <img class="imgCardBack" src="../img/cards/back of the bank card.png">
+                    </div>
+                    <div class="f-c-typeCard"></div>
+                    <div class="f-c-inputOne">
+                        <img class="f-c-iconToInputNumberCard" id="iconToInputNumberCard"
+                            src="../img/icon/iconBankCard.svg" alt="Иконки типов банковских карт">
+                        <input type="text" class="f-c-inputStyleNumberCard cardFormat" onchange="showMe(value)"
+                            placeholder="Номер карты" id="inputNamberCard" name="numberCard"
+                            value="2222 2222 2222 2222">
+                    </div>
+                    <div class="f-c-inputTwo">
+                        <div>
+                            <img class="f-c-iconToInputNameCard" src="../img/icon/iconUser.svg" alt="">
+                            <input type="text" class="f-c-inputStyleNameCard" placeholder="Имя (как на карте)"
+                                id="inputUserCard" name="userCard" value="GOSHA LOBOV">
+                        </div>
+                        <div>
+                            <img class="f-c-iconToInputDateCard" src="../img/icon/iconDate.svg" alt="">
+                            <input type="text" class="f-c-inputStyleDateCard dataCardFormat" placeholder="ММ/ГГ"
+                                id="inputDateCard" name="dateCard" value="12/32">
+                        </div>
+                    </div>
+                    <div class="f-c-inputThree">
+                        <img class="f-c-iconToInputCVCCard" src="../img/icon/iconCastle.svg" alt="">
+                        <input type="text" class="f-c-iconToInputCVC cvcFormat" placeholder="CVC" id="inputCvcCard"
+                            name="CvcCard" value="228">
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsCardsCreate">
+                <div class="form-button-select-a-card">
+                    <button type="submit">Добавить карту</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- <div class="modalDoneUser">
+    <div class="modalWindowDone" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Выполнено!</h6>
+        <div class="desсDoneUser"></div>
+    </div>
+</div>
+
+<div class="modalErrorsUser">
+    <div class="modalWindowErors" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Ошибка!</h6>
+        <div class="desсErrorsUser"></div>
+    </div>
+</div> -->
+
+<body>
+    <nav class="mainNav" id="navStacky">
+        <div class="container">
+            <a href="user.html" class="logo"></a>
+            <div class="nav-text">
+                <a href="booking.html">
+                    <div class="auth-text">Бронирования</div>
+                </a>
+                <a href="history.html">
+                    <div class="auth-text">История</div>
+                </a>
+                <a href="branches.html">
+                    <div class="auth-text">Филиалы</div>
+                </a>
+                <a href="../admin/adminPanel.html">
+                    <div class="auth-text">Админ панель</div>
+                </a>
+                <div class="hamburger">
+                    <div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+                <div class="nav-user-icon" onclick="ProfileModalActive()">Г</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="menu">
+        <div class="style-text">
+            <li><a href="booking.html">Бронирования</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="branches.html">Филиалы</a></li>
+        </div>
+    </div>
+
+    <section class="sixthSection">
+        <div class="container">
+            <div class="headerSixthSection">
+                <h6>История бронирование</h6>
+            </div>
+            <h5>
+                <span>Здесь пока</span> ничего нет :(
+            </h5>
+            <form action="" class="form-booking-now">
+                <div class="bookingBlock">
+                    <div class="bookingBlockHeader">
+                        <div class="bookingBlockLeft">
+                            <p class="MyOrderHeaderTitle">
+                                <span class="orderNumber">Номер заказа:</span> 34567784
+                            </p>
+                        </div>
+                    </div>
+                    <p class="MyOrderHeaderTitle styleIdAuto">
+                        ID: #2537432
+                    </p>
+                    <div class="bookingInfo">
+                        <div class="bookingInfoImg">
+                            <img src="../img/booking-img/1.png" alt="">
+                        </div>
+                        <div class="bookingInfoDesc">
+                            <div class="nameOfTheCar">
+                                Buick Avista    
+                            </div>
+                            <div class="licensePlateNumberOfTheCar">
+                                Госномер: Л228ОХ
+                            </div>
+                            <div class="bookingDate">
+                                Дата бронирования: 24.10.2020, 11:33
+                            </div>
+                            <div class="returnDate">
+                                Дата возврата: 29.10.2020, 11:33
+                            </div>
+                            <div class="totalNumberOfDays">
+                                Итоговое количество дней: 5 дней
+                            </div>
+                            <div class="branch">
+                                Филиал: Росстовский
+                            </div>
+                            <div class="classAuto">
+                                Класс: Премиум
+                            </div>
+                            <div class="statusAuto">
+                                Статус: В наличии
+                            </div>
+                            <div class="amountPerDay">
+                                Стоимость бронирование за день: 9500 руб.
+                            </div>
+                            <div class="calculationOfTheAmountWithAdiscount">
+                                <div class="c-a-d-labelContentAll mb-labelCAD">
+                                    <span>Итог:</span>
+                                    <span class="spanCalculatedDiscount">
+                                        лень решать
+                                    </span>
+                                    /
+                                    <span class="discountedAmount">
+                                        лень решать
+                                    </span> руб.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="MyOrderDescription">
+                        <div class="MyOrderDescriptionPadding">
+                            Суперкар появился в 2012 году, производитель Ferrari (Феррари), располагающийся в стране
+                            Италия. Двигатель Ferrari F12 Berlinetta объёмом 6262 см³ развивает мощность 740 лошадиных
+                            сил, что позволяет автомобилю разгоняться до 100 километров в час за 3.1 секунды и развивать
+                            максимальную скорость 340 км/ч. Цена Ferrari F12 Berlinetta - 320 000 $ или 21 120 000 ₽.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="bookingBlock">
+                    <div class="bookingBlockHeader">
+                        <div class="bookingBlockLeft">
+                            <p class="MyOrderHeaderTitle">
+                                <span class="orderNumber">Номер заказа:</span> 34567784
+                            </p>
+                        </div>
+                    </div>
+                    <p class="MyOrderHeaderTitle styleIdAuto">
+                        ID: #2537432
+                    </p>
+                    <div class="bookingInfo">
+                        <div class="bookingInfoImg">
+                            <img src="../img/booking-img/2.png" alt="">
+                        </div>
+                        <div class="bookingInfoDesc">
+                            <div class="nameOfTheCar">
+                                Buick Avista    
+                            </div>
+                            <div class="licensePlateNumberOfTheCar">
+                                Госномер: Л228ОХ
+                            </div>
+                            <div class="bookingDate">
+                                Дата бронирования: 24.10.2020, 11:33
+                            </div>
+                            <div class="returnDate">
+                                Дата возврата: 29.10.2020, 11:33
+                            </div>
+                            <div class="totalNumberOfDays">
+                                Итоговое количество дней: 5 дней
+                            </div>
+                            <div class="branch">
+                                Филиал: Росстовский
+                            </div>
+                            <div class="classAuto">
+                                Класс: Премиум
+                            </div>
+                            <div class="statusAuto">
+                                Статус: В наличии
+                            </div>
+                            <div class="amountPerDay">
+                                Стоимость бронирование за день: 9500 руб.
+                            </div>
+                            <div class="calculationOfTheAmountWithAdiscount">
+                                <div class="c-a-d-labelContentAll mb-labelCAD">
+                                    <span>Итог:</span>
+                                    <span class="spanCalculatedDiscount">
+                                        лень решать
+                                    </span>
+                                    /
+                                    <span class="discountedAmount">
+                                        лень решать
+                                    </span> руб.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr-line">
+                    <div class="MyOrderDescription">
+                        <div class="MyOrderDescriptionPadding">
+                            Концепт Buick Avista был представлен в начале 2016 года на Детройтском автосалоне.
+                            Заднеприводное купе создано на основе укороченной платформы флагманского седана Cadillac CT6. От
+                            этого же автомобиля позаимствован битурбомотор V6 3.0 (405 л. с.) нового семейства GM High
+                            Feature и восьмиступенчатый «автомат». В салоне выставочной машины — четыре полноценных места,
+                            сенсорные экраны и панели.
+                            Возможность появления серийного варианта модели Buick Avista в ближайшие годы не исключается.
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-user">
+        <div class="container">
+            <div class="footerBlock-user">
+                <a class="numberFoot-user" href="">8 (800) 110-10-10</a>
+                <a href="">ООО «Индекс драйв», ОГРН</a>
+            </div>
+            <div class="footerBlock-user">
+                <h6>Личный кабинет</h6>
+                <a href="profile.html">Личный кабинет</a>
+            </div>
+            <div class="footerBlock-user">
+                <h6>Информация</h6>
+                <a>Акции</a>
+                <a href="booking.html">Бронирования</a>
+                <a href="history.html">История</a>
+                <a>Новости</a>
+                <a href="branches.html">Филиалы</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<!-- frontend functionality on this page -->
+
+<script src="../js/frontend/booking.js"></script>
+<script src="../js/frontend/nav.js"></script>
+<script src="../js/frontend/user.js"></script>
+<script src="../js/frontend/modalCards.js"></script>
+<script src="../js/frontend/modalUser.js"></script>
+
+</html>

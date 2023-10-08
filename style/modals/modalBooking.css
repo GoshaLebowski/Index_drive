@@ -1,0 +1,196 @@
+.modalBooking {
+    display: none;
+}
+
+.modalBooking.active {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalBookingWindow {
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modaBookinglWindowHead {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.close-form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.formBooking {
+    position: relative;
+}
+
+.styleBookingSelect {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.styleBookingSelect select {
+    border-radius: 9.9625px;
+    margin-bottom: 20px;
+    width: 451.43px;
+    height: 49.81px;
+    padding: 13px;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #797979;
+    border: 0.99625px solid #D1D1D1;
+    background: none;
+}
+
+.form-floatingBooking {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.form-floatingBooking label {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+}
+
+.form-inputBooking {
+    padding: 12px;
+    padding-left: 40px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    margin-bottom: 20px;
+    width: 397px;
+}
+
+.form-imgDataBooking {
+    width: 25px;
+    position: absolute;
+    left: 10px;
+    top: 38px;
+}
+
+.buttonBooking {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.buttonBooking button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 14px 136px;
+    border: none;
+}
+
+.buttonBooking button::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2.3em) skewX(-25deg);
+}
+
+.buttonBooking button:hover::before {
+    animation: move-lightThree 0.7s;
+}
+
+@keyframes move-lightThree {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}
+
+.butAddCarBooking {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.butAddCarBooking button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 14px 179px;
+    border: none;
+}
+
+.butAddCarBooking button::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2.3em) skewX(-25deg);
+}
+
+.butAddCarBooking button:hover::before {
+    animation: move-lightFourth 0.7s;
+}
+    
+@keyframes move-lightFourth {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}

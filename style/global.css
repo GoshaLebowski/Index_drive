@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'InterBlack';
+	src: url(../font/Inter-Black.ttf);
+}
+
+@font-face {
+	font-family: 'InterBold';
+	src: url(../font/Inter-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'InterExtraBold';
+	src: url(../font/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: 'InterExtraLight';
+	src: url(../font/Inter-ExtraLight.ttf);
+}
+
+@font-face {
+	font-family: 'InterLight';
+	src: url(../font/Inter-Light.ttf);
+}
+
+@font-face {
+	font-family: 'InterMedium';
+	src: url(../font/Inter-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'InterRegular';
+	src: url(../font/Inter-Regular.ttf);
+}
+
+@font-face {
+	font-family: 'InterSemiBold';
+	src: url(../font/Inter-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: 'InterThin';
+	src: url(../font/Inter-Thin.ttf);
+}
+
+.container {
+	width: 1300px;
+	height: 100%;
+}

@@ -1,0 +1,371 @@
+nav {
+    width: 100%;
+    height: 160px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 213px;
+    height: 105px;
+    background-image: url(../../img/logo/index_drive-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.nav-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+.nav-text>div,
+.nav-text>a {
+    margin-left: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+/* nav style end */
+
+/* authorization in the admin panel style start */
+.mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.container h5 {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.auth-form {
+    position: relative;
+}
+
+.modalWindow {
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-floating {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+}
+
+.form-control {
+    padding: 12px;
+    padding-left: 40px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+}
+
+.mb {
+    margin-bottom: 16px;
+}
+
+.form-floating label {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+}
+
+.form-floating-img {
+    width: 25px;
+    position: absolute;
+    left: 10px;
+    top: 40px;
+}
+
+.form-floating-img-user {
+    width: 22px;
+    position: absolute;
+    left: 11px;
+    top: 37px;
+}
+
+.form-floating-img-pasword {
+    width: 23px;
+    position: absolute;
+    right: 14px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.form-button-a-cont-reg {
+    width: 35%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-button-a-cont-reg button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 16px 128px;
+    border: none;
+}
+
+.form-button-a-cont-reg button::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-button-a-cont-reg button:hover::before {
+    animation: move-lightFour 0.7s;
+}
+
+@keyframes move-lightFour {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}
+
+.form-buttonAdmin {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-buttonAdmin a {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 16px 169px;
+    border: none;
+}
+
+.form-buttonAdmin a::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-buttonAdmin a:hover::before {
+    animation: move-lightButtonAd 0.7s;
+}
+
+@keyframes move-lightButtonAd {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}
+
+.form-buttonAdmin1 {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-buttonAdmin1 a {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 16px 141px;
+    border: none;
+}
+
+.form-buttonAdmin1 a::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-buttonAdmin1 a:hover::before {
+    animation: move-lightButtonAd 0.7s;
+}
+
+@keyframes move-lightButtonAd {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}
+
+.form-buttonAdmin2 {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-buttonAdmin2 a {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 16px 66px;
+    border: none;
+}
+
+.form-buttonAdmin2 a::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-buttonAdmin2 a:hover::before {
+    animation: move-lightButtonAd 0.7s;
+}
+
+@keyframes move-lightButtonAd {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}
+
+.form-buttonAdmin3 {
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-buttonAdmin3 a {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 16px 128px;
+    border: none;
+}
+
+.form-buttonAdmin3 a::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-buttonAdmin3 a:hover::before {
+    animation: move-lightButtonAd 0.7s;
+}
+
+@keyframes move-lightButtonAd {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}
+
+/* authorization in the admin panel style end */

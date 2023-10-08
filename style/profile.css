@@ -1,0 +1,416 @@
+    /* personal account style start */
+.fourthSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.fourthSection h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.auth-form {
+    position: relative;
+}
+
+.dataInfo {
+    min-width: 500px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-floating {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.form-control {
+    padding: 12px;
+    padding-left: 55px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    width: 500px;
+    height: 30px;
+}
+
+.input-form-contrl-bank {
+    padding: 12px;
+    padding-left: 55px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px 0px 0px 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    width: 440px;
+    height: 30px;
+}
+
+.bankCardsInputAndButton .buttonChangeCard {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 0px 10px 10px 0;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 9px 13px;
+    border: none;
+}
+
+.bankCardsInputAndButton .buttonChangeCard img {
+    padding-top: 2px;
+}
+
+.mb {
+    margin-bottom: 16px;
+}
+
+.form-floating label {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+}
+
+.form-floating-img {
+    width: 31px;
+    position: absolute;
+    left: 13px;
+    top: 43px;
+}
+
+.form-floating-img-user {
+    width: 25px;
+    position: absolute;
+    left: 18px;
+    top: 42px;
+}
+
+.formWithUserData {
+    margin-top: 98px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.userInformation {
+    width: 390px;
+    padding: 30px;
+}
+
+.userInformationAvatar {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.userInformationInfoAvatar {
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    border-radius: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 16px;
+}
+
+.userInformationInfoListName {
+    font-size: 25px;
+}
+
+.userInformationInfoListNumber {
+    font-size: 25px;
+    margin: 3px 0;
+}
+
+.userInformationInfoListEditProfile {
+    font-family: 'InterBold';
+    font-size: 19px;
+    background: #525252;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.userInformationInfoListEditProfile img {
+    margin-right: 6px;
+    width: 30px;
+}
+
+.userInformationButton {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.userInformationButton button {
+    border: 2px solid #433F3F;
+    border-radius: 10px;
+    width: 100%;
+    background: -webkit-linear-gradient(56deg, #000000 -0.19%, #7C7C7C 127.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.userInformationButton span {
+    display: flex;
+    border: 2px solid #433F3F;
+    border-radius: 10px;
+    width: 99%;
+    background: -webkit-linear-gradient(56deg, #000000 -0.19%, #7C7C7C 127.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    height: 48px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    justify-content: center;
+    text-align: center;
+    line-height: 47px;
+}
+
+.input-file {
+    position: relative;
+    display: inline-block;
+}
+
+.input-file-text {
+    padding: 0 23px;
+    line-height: 37px;
+    text-align: left;
+    height: 40px;
+    display: block;
+    float: left;
+    box-sizing: border-box;
+    width: 145px;
+    border-radius: 6px 0px 0 6px;
+    border: 2px solid #000000;
+    font-size: 17px;
+    left: -143px;
+    position: absolute;
+    font-weight: 700;
+}
+
+.input-file-btn {
+    line-height: 22px;
+    padding: 7px 20px;
+    box-sizing: border-box;
+    margin: 0;
+    border: 2px solid #433F3F;
+    border-radius: 0px 10px 10px 0px;
+    background: -webkit-linear-gradient(56deg, #000000 -0.19%, #7C7C7C 127.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    height: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.input-file input[type=file] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.buttonChangingPersonalData button {
+    margin-top: 50px;
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 14px 120px;
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.buttonChangingPersonalData button::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-9em) skewX(-45deg);
+}
+
+.buttonChangingPersonalData button:hover::before {
+    animation: move-lightTwo 0.5s;
+}
+
+@keyframes move-lightTwo {
+    0% {
+        transform: translateX(-9em) skewX(-45deg);
+    }
+    
+    100% {
+        transform: translateX(28em) skewX(-45deg);
+    }
+}
+/* personal account style end */    
+
+/* booked cars style start */
+.fifthSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.fifthSection h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.fifthSection h5 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.fifthSection h5 span {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #061E42;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.bookingBlock {
+    background: #FFFFFF;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 0 1px rgba(13, 35, 67, .07), 0 5px 15px -8px rgba(13, 35, 67, .4);
+    margin-bottom: 20px;
+    width: 96%;
+    margin-bottom: 50px;
+}
+
+.bookingBlockLeft {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #797979;
+}
+
+.bookingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.bookingInfoImg {
+    width: 406px;
+}
+
+.bookingInfoImg img {
+    width: 586px;
+    height: 277px;
+}
+
+.bookingInfoDesc div {
+    margin-bottom: 15px;
+}
+
+.bookingInfoDesc {
+    font-family: 'InterRegular';
+    width: 462px;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.bookingInfoDesc .nameOfTheCar {
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+.сostOfBooking {
+    font-weight: 600;
+}
+
+.сostOfBooking span {
+    color: #000000;
+}
+
+/* presonal account style end */

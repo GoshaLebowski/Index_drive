@@ -1,0 +1,664 @@
+@media (max-width: 768px) {
+    .modalWindow {
+        min-width: 500px;
+        padding: 60px;
+    }
+
+    .modalWindowHead {
+        font-size: 31.9px;
+        margin-bottom: 30px;
+    }
+
+    .form-control {
+        width: 450px;
+        height: 25px;
+        padding-left: 45px;
+    }
+
+    .mb {
+        margin-bottom: 15px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating-img {
+        width: 30px;
+        left: 9px;
+        top: 41px;
+    }
+
+    .form-floating-img-user {
+        width: 25px;
+        top: 39px;
+    }
+
+    .form-floating-img-pasword {
+        width: 29px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 16px 226px;
+    }
+
+    .form-button-a-cont-auth button::before {
+        position: absolute;
+        content: '';
+        width: 1.5em;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    .form-button-a-cont-auth button:hover::before {
+        animation: move-lightThree 0.7s;
+    }
+
+    @keyframes move-lightThree {
+        0% {
+            transform: translateX(-2em) skewX(-25deg);
+        }
+
+        100% {
+            transform: translateX(27.5em) skewX(-25deg);
+        }
+    }
+
+    .form-button-a-cont-reg button {
+        padding: 16px 158px;
+    }
+
+    .form-button-a-cont-reg button::before {
+        position: absolute;
+        content: '';
+        width: 1.5em;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    .form-button-a-cont-reg button:hover::before {
+        animation: move-lightFour 0.7s;
+    }
+
+    @keyframes move-lightFour {
+        0% {
+            transform: translateX(-2em) skewX(-25deg);
+        }
+
+        100% {
+            transform: translateX(27.5em) skewX(-25deg);
+        }
+    }
+}
+
+@media (max-width: 540px) {
+    .modalWindow {
+        width: 408px;
+        padding: 49px;
+        min-width: 0px;
+    }
+
+    .modalWindowHead {
+        font-size: 27.9px;
+        margin-bottom: 24px;
+    }
+
+    .form-control {
+        width: 348px;
+        height: 23px;
+    }
+
+    .mb {
+        margin-bottom: 15px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating-img {
+        width: 29px;
+        left: 10px;
+        top: 40px;
+    }
+
+    .form-floating-img-user {
+        width: 23px;
+        top: 39px;
+        left: 13px;
+    }
+
+    .form-floating-img-pasword {
+        right: 12px;
+        top: 38px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 16px 175px;
+    }
+
+    .form-button-a-cont-auth button::before {
+        position: absolute;
+        content: '';
+        width: 1.5em;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-1.96em) skewX(-24deg);
+    }
+
+    .form-button-a-cont-auth button:hover::before {
+        animation: move-lightThree 0.7s;
+    }
+
+    @keyframes move-lightThree {
+        0% {
+            transform: translateX(-2em) skewX(-25deg);
+        }
+
+        100% {
+            transform: translateX(21.9em) skewX(-25deg);
+        }
+    }
+
+    .form-button-a-cont-reg button {
+        padding: 16px 107px;
+    }
+
+    .form-button-a-cont-reg button::before {
+        position: absolute;
+        content: '';
+        width: 1.5em;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-1.96em) skewX(-24deg);
+    }
+
+    .form-button-a-cont-reg button:hover::before {
+        animation: move-lightFour 0.6s;
+    }
+
+    @keyframes move-lightFour {
+        0% {
+            transform: translateX(-1.95em) skewX(-25deg);
+        }
+
+        100% {
+            transform: translateX(21.9em) skewX(-25deg);
+        }
+    }
+
+    .close-form {
+        width: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalWindow {
+        width: 380px;
+        padding: 35px;
+    }
+
+    .modalWindowHead {
+        font-size: 25.9px;
+    }
+
+    .form-control {
+        width: 322px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating-img {
+        width: 29px;
+        left: 10px;
+        top: 40px;
+    }
+
+    .form-floating-img-user {
+        width: 23px;
+        top: 39px;
+        left: 13px;
+    }
+
+    .form-floating-img-pasword {
+        right: 12px;
+        top: 38px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 16px 161px;
+    }
+
+    .form-button-a-cont-auth button::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-1em) skewX(-18deg);
+    }
+
+    .form-button-a-cont-auth button:hover::before {
+        animation: move-lightFour 0.45s;
+    }
+
+    @keyframes move-lightThree {
+        0% {
+            transform: translateX(-1em) skewX(-18deg);
+        }
+
+        100% {
+            transform: translateX(20em) skewX(-18deg);
+        }
+    }
+
+    .form-button-a-cont-reg button {
+        padding: 16px 93px;
+    }
+
+    .form-button-a-cont-reg button::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-1em) skewX(-18deg);
+    }
+
+    .form-button-a-cont-reg button:hover::before {
+        animation: move-lightFour 0.45s;
+    }
+
+    @keyframes move-lightFour {
+        0% {
+            transform: translateX(-1em) skewX(-18deg);
+        }
+
+        100% {
+            transform: translateX(20em) skewX(-18deg);
+        }
+    }
+}
+
+@media (max-width: 414px) {
+    .modalWindow {
+        width: 349px;
+        padding: 26px;
+    }
+
+    .modalWindowHead {
+        font-size: 25.9px;
+    }
+
+    .form-control {
+        width: 290px;
+        height: 20px;
+    }
+
+    .form-floating label {
+        font-size: 16px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating-img {
+        top: 38px;
+    }
+
+    .form-floating-img-user {
+        top: 38px;
+    }
+
+    .form-floating-img-pasword {
+        right: 10px;
+        top: 37px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 16px 146px;
+    }
+
+    .form-button-a-cont-auth button::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-0.9em) skewX(-18deg);
+    }
+
+    .form-button-a-cont-auth button:hover::before {
+        animation: move-lightFour 0.45s;
+    }
+
+    @keyframes move-lightThree {
+        0% {
+            transform: translateX(-0.9em) skewX(-18deg);
+        }
+
+        100% {
+            transform: translateX(18.5em) skewX(-18deg);
+        }
+    }
+
+    .form-button-a-cont-reg button {
+        padding: 16px 78px;
+    }
+
+    .form-button-a-cont-reg button::before {
+        position: absolute;
+        content: '';
+        width: 10px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.6);
+        transform: translateX(-0.9em) skewX(-18deg);
+    }
+
+    .form-button-a-cont-reg button:hover::before {
+        animation: move-lightFour 0.45s;
+    }
+
+    @keyframes move-lightFour {
+        0% {
+            transform: translateX(-0.9em) skewX(-18deg);
+        }
+
+        100% {
+            transform: translateX(18.5em) skewX(-18deg);
+        }
+    }
+}
+
+@media (max-width: 395px) {
+    .modalWindow {
+        width: 354px;
+        padding: 20px;
+    }
+
+    .modalWindowHead {
+        font-size: 21.9px;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        width: 295px;
+        height: 18px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating-img {
+        top: 37px;
+    }
+
+    .form-floating-img-user {
+        width: 23px;
+        top: 36px;
+        left: 13px;
+    }
+
+    .form-floating-img-pasword {
+        right: 14px;
+        top: 37px;
+        width: 26px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 16px 148px;
+    }
+
+    .form-button-a-cont-reg button {
+        padding: 16px 80px;
+    }
+
+    .close-form {
+        width: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modalWindow {
+        width: 333px;
+        padding: 20px;
+    }
+
+    .modalWindowHead {
+        font-size: 25.9px;
+    }
+
+    .form-control {
+        width: 273px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating-img {
+        width: 29px;
+        left: 10px;
+        top: 37px;
+    }
+
+    .form-floating-img-user {
+        width: 21px;
+        top: 38px;
+    }
+
+    .form-floating-img-pasword {
+        right: 12px;
+        top: 38px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 16px 137px;
+    }
+
+    .form-button-a-cont-reg button {
+        padding: 16px 69px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modalWindow {
+        width: 310px;
+        padding: 15px;
+    }
+
+    .modalWindowHead {
+        font-size: 20px;
+    }
+
+    .form-control {
+        width: 263px;
+        height: 10px;
+        padding-left: 35px;
+        font-size: 13px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating label {
+        font-size: 14px;
+    }
+
+    .form-floating-img {
+        width: 21px;
+        left: 10px;
+        top: 37px;
+    }
+
+    .form-floating-img-user {
+        width: 17px;
+        top: 36px;
+    }
+
+    .form-floating-img-pasword {
+        width: 23px;
+        right: 8px;
+        top: 35px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .form-button-a-cont-reg button::before {
+        display: none;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 12px 130px;
+        font-size: 17px;
+    }
+
+    .form-button-a-cont-auth button::before {
+        display: none;
+    }
+
+    .form-button-a-cont-reg button {
+        font-size: 15px;
+        padding: 11px 79px;
+    }
+
+    .form-text-who {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalWindow {
+        width: 280px;
+        padding: 15px;
+    }
+
+    .modalWindowHead {
+        font-size: 20px;
+    }
+
+    .form-control {
+        width: 232px;
+    }
+
+    .form-floating {
+        width: 100%;
+    }
+
+    .form-floating label {
+        font-size: 14px;
+    }
+
+    .form-floating-img {
+        width: 21px;
+        left: 10px;
+        top: 37px;
+    }
+
+    .form-floating-img-user {
+        width: 17px;
+        top: 36px;
+    }
+
+    .form-floating-img-pasword {
+        width: 23px;
+        right: 8px;
+        top: 35px;
+    }
+
+    .form-button-a-cont-auth,
+    .form-button-a-cont-reg {
+        width: 100%;
+        margin: auto;
+        margin-top: 5px;
+    }
+
+    .form-button-a-cont-reg button::before {
+        display: none;
+    }
+
+    .form-button-a-cont-auth button {
+        padding: 12px 114px;
+        font-size: 17px;
+    }
+
+    .form-button-a-cont-reg button {
+        padding: 11px 64px;
+    }
+
+    .form-text-who {
+        font-size: 13px;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/admin/additionalSettings.css">
+    <link rel="stylesheet" href="../style/admin/modals/modalAddtionalSettings.css">
+    <title>INDEX DRIVE - доп. настройка</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Admin ID:#2325</b></p>
+                </div>
+            </div>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="modalMarkAuto" onclick="modalMarkAutoActive()">
+    <div class="modalMarkAutoWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" onclick="modalMarkAutoRemove()" alt="">
+        <h6 class="modalMarkAutoWindowHead">Добавление марки авто</h6>
+        <form method="post" class="formAddNews">
+            <div class="form-floatingAddNews">
+                <label for="floatingInput">Марка авто</label>
+                <input type="text" class="form-inputAddNews" name="" id="floatingInput"
+                    placeholder="Введите марку авто">
+                <img class="form-imgAddNews" src="../img/icon/iconTitle.svg" alt="">
+            </div>
+
+            <div class="buttonAddNews">
+                <button type="submit">Добавить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modalModalAuto" onclick="modalModalAutoActive()">
+    <div class="modalModalAutoWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" onclick="modalModalAutoRemove()" alt="">
+        <h6 class="modalModalAutoWindowHead">Добавление модели авто</h6>
+        <form method="post" class="formAddNews">
+            <div class="form-floatingAddNews">
+                <label for="floatingInput">Модель авто</label>
+                <input type="text" class="form-inputAddNews" name="" id="floatingInput"
+                    placeholder="Введите модель авто">
+                <img class="form-imgAddNews" src="../img/icon/iconTitle.svg" alt="">
+            </div>
+
+            <div class="buttonAddNews">
+                <button type="submit">Добавить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modalClassAuto" onclick="modalClassAutoActive()">
+    <div class="modalClassAutoWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" onclick="modalClassAutoRemove()" alt="">
+        <h6 class="modalClassAutoWindowHead">Добавление класса авто</h6>
+        <form method="post" class="formAddNews">
+            <div class="form-floatingAddNews">
+                <label for="floatingInput">Класс авто</label>
+                <input type="text" class="form-inputAddNews" name="" id="floatingInput"
+                    placeholder="Введите класс авто">
+                <img class="form-imgAddNews" src="../img/icon/iconTitle.svg" alt="">
+            </div>
+
+            <div class="buttonAddNews">
+                <button type="submit">Добавить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modalStatusAuto" onclick="modalStatusAutoActive()">
+    <div class="modalStatusAutoWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" onclick="modalStatusAutoRemove()" alt="">
+        <h6 class="modalStatusAutoWindowHead">Добавление статуса авто</h6>
+        <form method="post" class="formAddNews">
+            <div class="form-floatingAddNews">
+                <label for="floatingInput">Статус авто</label>
+                <input type="text" class="form-inputAddNews" name="" id="floatingInput"
+                    placeholder="Введите статус авто">
+                <img class="form-imgAddNews" src="../img/icon/iconTitle.svg" alt="">
+            </div>
+
+            <div class="buttonAddNews">
+                <button type="submit">Добавить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modalBranchesAuto" onclick="modalBranchesAutoActive()">
+    <div class="modalBranchesAutoWindow" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" onclick="modalBranchesAutoRemove()" alt="">
+        <h6 class="modalBranchesAutoWindowHead">Добавление филиалов</h6>
+        <form method="post" class="formAddNews">
+            <div class="form-floatingAddNews">
+                <label for="floatingInput">Филиал</label>
+                <input type="text" class="form-inputAddNews" name="" id="floatingInput"
+                    placeholder="Введите филиал">
+                <img class="form-imgAddNews" src="../img/icon/iconTitle.svg" alt="">
+            </div>
+
+            <div class="buttonAddNews">
+                <button type="submit">Добавить</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="adminPanel.html" class="logo"></a>
+            <div class="nav-text">
+                <div class="nav-user-icon" onclick="ProfileModalActive()">admin</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <h6>Добавление авто</h6>
+            <h5>Доп. настройка</h5>
+            <form action="">
+                <div class="blockAdditonalSettings">
+                    <label class="descAdditonalSettings">Марка автомобиля:</label>
+                    <div class="blockAdditonalSettingsInfo">
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #1</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Ferrari">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #2</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Buick">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-button-add-a-card" onclick="modalMarkAutoActive()">
+                            <span>Добавить</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blockAdditonalSettings">
+                    <label class="descAdditonalSettings">Модель автомобиля:</label>
+                    <div class="blockAdditonalSettingsInfo">
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #1</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Berlinetta">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #2</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Avista">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-button-add-a-card" onclick="modalModalAutoActive()">
+                            <span>Добавить</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blockAdditonalSettings">
+                    <label class="descAdditonalSettings">Класс автомобиля:</label>
+                    <div class="blockAdditonalSettingsInfo">
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #1</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Эконом">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #2</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Премиум">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-button-add-a-card" onclick="modalClassAutoActive()">
+                            <span>Добавить</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blockAdditonalSettings">
+                    <label class="descAdditonalSettings">Статус автомобиля:</label>
+                    <div class="blockAdditonalSettingsInfo">
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #1</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="В наличии">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #2</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Бронирована">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-button-add-a-card" onclick="modalStatusAutoActive()">
+                            <span>Добавить</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blockAdditonalSettings">
+                    <label class="descAdditonalSettings">Филиал</label>
+                    <div class="blockAdditonalSettingsInfo">
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #1</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Какая-то улица">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-floating mb">
+                            <label for="floatingInput">ID: #2</label>
+                            <div class="bankCardsInputAndButton">
+                                <input type="text" class="input-form-contrl-bank" name="" id="floatingInput"
+                                    placeholder="" value="Какая-то улица">
+                                <div class="buttonChangeCard">
+                                    <button type="submit"><img src="../img/button/minus.svg"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-button-add-a-card" onclick="modalBranchesAutoActive()">
+                            <span>Добавить</span>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script src="../js/frontend/admin/adminPanel.js"></script>
+<script src="../js/frontend/admin/additionalSettings.js"></script>
+
+</html>

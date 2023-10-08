@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/admin/index.css">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">    
+    <link rel="stylesheet" href="../style/global.css">
+    <title>INDEX DRIVE - админ панель</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Admin ID:#2325</b></p>
+                </div>
+            </div>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="../user/user.html" class="logo"></a>
+            <div class="nav-text">
+                <div class="nav-user-icon" onclick="ProfileModalActive()">admin</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <h6>Админ панель</h6>
+            <form name="regForm" method="post" class="auth-form">
+                <div class="form-buttonAdmin">
+                    <a href="adminAddNews.html" class="form-button-ad">Новости</a>
+                </div>
+
+                <div class="form-buttonAdmin1">
+                    <a href="adminUser.html" class="form-button-ad1">Пользователи</a>
+                </div>
+
+                <div class="form-buttonAdmin2">
+                    <a href="regAdmin.html" class="form-button-ad2">Регистрация админ аккаунтов</a>
+                </div>
+
+                <div class="form-buttonAdmin3">
+                    <a href="addingAnAuto.html" class="form-button-ad3">Добавление авто</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script src="../js/frontend/admin/adminPanel.js"></script>
+
+</html>

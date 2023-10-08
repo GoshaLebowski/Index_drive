@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/profile.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/modals/modalCard.css">
+    <link rel="stylesheet" href="../style/modals/errors&done.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/errors&done.css">
+    <link rel="stylesheet" href="../style/adaptive/profile.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/modalNav.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/userModal.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/bankCard.css">
+    <link rel="stylesheet" href="../style/adaptive/nav.css"> 
+    <link rel="stylesheet" href="../style/adaptive/footer.css">
+    <link rel="icon" href="../img/logo/icon.png">
+    <title>INDEX DRIVE - профиль</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoAvatar">Г</div>
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Здравствуйте, Георгий</b></p>
+                    <p class="modalUserProfileWindowInfoListNumber">+79999999999</p>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/iconUser.svg" alt="">Редактировать профиль</a>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/scores.svg" alt="">Баллы: 5</a>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                </div>
+            </div>
+            <a class="modalUserProfileWindowButton"><button onclick="cardsModalActive()">Банковские карты</button></a>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="selectBankCards" onclick="cardsModalActive()">
+    <div class="modalWindowCards" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form-cards" onclick="removeModalActive()" alt="">
+        <h6 class="modalWindowCardsHead">Список банковских карт</h6>
+        <form method="post" name="LogForm" class="auth-form-cards">
+            <div class="form-floating-cards mb-cards">
+                <img class="form-floating-cards-img" src="../img/cards/mastercard.png" alt="">
+                <div class="bankCardsInputAndButton">
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input id-check" name="rad">
+                        <div class="rad-design"></div>
+                    </label>
+                    <input type="text" class="form-control-cards my-input-card inputDisabled" name="bankCard_1" id="bankCard_1" disabled value="****4444">
+                    <button class="buttonDeleteCard"><img src="../img/button/minus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="form-floating-cards mb-cards">
+                <img class="form-floating-cards-img" src="../img/cards/visa.png" alt="">
+                <div class="bankCardsInputAndButton">
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input id-check" name="rad">
+                        <div class="rad-design"></div>
+                    </label>
+                    <input type="text" class="form-control-cards my-input-card inputDisabled" name="bankCard_2" id="bankCard_2" disabled value="****3463">
+                    <button class="buttonDeleteCard"><img src="../img/button/minus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="buttonsCards">
+                <div class="form-button-add-a-card" onclick="cardModalCreate()">    
+                    <span>Добавить карту</span>
+                </div>
+
+                <div class="form-button-select-a-card">
+                    <button type="submit">Выбрать карту</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="createBankCards" onclick="cardModalCreate()">
+    <div class="modalWindowCardsCreate" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form-cards" onclick="cardModalRemove()" alt="">
+        <h6 class="modalWindowCardsHead">Список банковских карт</h6>
+        <form method="post" name="LogForm" class="auth-form-cards">
+            <div class="full-content-card-creation">
+                <div class="f-c-gridContainer">
+                    <div class="img-bankCard">
+                        <img class="imgCardFront" src="../img/cards/front part of the bank card.png">
+                        <img class="imgCardBack" src="../img/cards/back of the bank card.png">
+                    </div>
+                    <div class="f-c-typeCard"></div>
+                    <div class="f-c-inputOne">
+                        <img class="f-c-iconToInputNumberCard" id="iconToInputNumberCard" src="../img/icon/iconBankCard.svg" alt="Иконки типов банковских карт">
+                        <input type="text" class="f-c-inputStyleNumberCard cardFormat" onchange="showMe(value)"
+                            placeholder="Номер карты" id="inputNamberCard" name="numberCard" value="2222 2222 2222 2222">
+                    </div>
+                    <div class="f-c-inputTwo">
+                        <div>
+                            <img class="f-c-iconToInputNameCard" src="../img/icon/iconUser.svg" alt="">
+                            <input type="text" class="f-c-inputStyleNameCard" placeholder="Имя (как на карте)"
+                               id="inputUserCard" name="userCard" value="GOSHA LOBOV">
+                        </div>
+                        <div>
+                            <img class="f-c-iconToInputDateCard" src="../img/icon/iconDate.svg" alt="">
+                            <input type="text" class="f-c-inputStyleDateCard dataCardFormat" placeholder="ММ/ГГ"
+                               id="inputDateCard" name="dateCard" value="12/32">
+                        </div>
+                    </div>
+                    <div class="f-c-inputThree">
+                        <img class="f-c-iconToInputCVCCard" src="../img/icon/iconCastle.svg" alt="">
+                        <input type="text" class="f-c-iconToInputCVC cvcFormat" placeholder="CVC" id="inputCvcCard" name="CvcCard" value="228">
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsCardsCreate">
+                <div class="form-button-select-a-card">
+                    <button type="submit">Добавить карту</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modalDoneUser">
+    <div class="modalWindowDone" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Выполнено!</h6>
+        <div class="desсDoneUser"></div>
+    </div>
+</div>
+
+<div class="modalErrorsUser">
+    <div class="modalWindowErors" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Ошибка!</h6>
+        <div class="desсErrorsUser"></div>
+    </div>
+</div>
+
+<body>
+    <nav class="mainNav" id="navStacky">
+        <div class="container">
+            <a href="user.html" class="logo"></a>
+            <div class="nav-text">
+                <a href="booking.html">
+                    <div class="auth-text">Бронирования</div>
+                </a>
+                <a href="history.html">
+                    <div class="auth-text">История</div>
+                </a>
+                <a href="branches.html">
+                    <div class="auth-text">Филиалы</div>
+                </a>
+                <a href="../admin/adminPanel.html">
+                    <div class="auth-text">Админ панель</div>
+                </a>
+                <div class="hamburger">
+                    <div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+                <div class="nav-user-icon" onclick="ProfileModalActive()">Г</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="menu">
+        <div class="style-text">
+            <li><a href="booking.html">Бронирования</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="branches.html">Филиалы</a></li>
+        </div>
+    </div>
+
+    <section class="fourthSection">
+        <div class="container">
+            <h6>Личный кабинет</h6>
+            <form action="">
+                <div class="formWithUserData">
+                    <div class="dataInfo">
+                        <form name="regForm" method="post" class="auth-form">
+                            <div class="form-floating mb">
+                                <label for="floatingInputName">Фамилия Имя Отчество</label>
+                                <input type="text" class="form-control" name="name" id="floatingInputName"
+                                    placeholder="Введите ФИО" value="Лобов Георгий Александрович" autocomplete="on">
+                                <img class="form-floating-img-user" src="../img/icon/iconUser.svg" alt="">
+                            </div>
+                            <div class="form-floating mb">
+                                <label for="floatingInputPasport">Паспортные данные</label>
+                                <input type="text" class="form-control pasportFormat" name="email" id="floatingInputPasport"
+                                    placeholder="Введите паспортные данные" value="2345 253352" autocomplete="on">
+                                <img class="form-floating-img" src="../img/icon/iconPassport.svg" alt="">
+                            </div>
+                            <div class="form-floating mb">
+                                <label for="floatingInputNumber">Номер телефона</label>
+                                <input type="text" class="form-control numberFormat" name="number" id="floatingInputNumber"
+                                    placeholder="Введите номер телефона" value="+7 (999) 999-99-99" autocomplete="on">
+                                <img class="form-floating-img" src="../img/icon/iconTelephone.svg" alt="">
+                            </div>
+                            <div class="form-floating mb">
+                                <label for="floatingInputBankCard">Банковская карта</label>
+                                <div class="bankCardsInputAndButton">
+                                    <input type="text" class="input-form-contrl-bank" name="number" id="floatingInputBankCard"
+                                        placeholder="" value="****4444" disabled>
+                                    <img class="form-floating-img" src="../img/icon/iconBankCard.svg" alt="">
+                                    <div class="buttonChangeCard" onclick="cardsModalActive()">
+                                        <img src="../img/button/edit.svg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-floating mb">
+                                <label for="floatingInputDateOfBirth">Дата рождения</label>
+                                <input type="date" class="form-control dateFormat" value="2004-02-03" name="dateOfBirth"
+                                    id="floatingInputDateOfBirth" placeholder="Введите дату рождения" value="" autocomplete="on">
+                                <img class="form-floating-img" src="../img/icon/dateOfBirth.svg" alt="">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="userInformation">
+                        <div class="userInformationInfo">
+                            <div class="userInformationAvatar">
+                                <div class="userInformationInfoAvatar">Г</div>
+                                <div class="userInformationDownloadImg">
+                                    <label class="input-file">
+                                        <span id="textValue" class="input-file-text"></span>
+                                        <input type="file" name="file" onchange="showFile(this)">
+                                        <span class="input-file-btn">Загрузить фото</span>
+                                    </label>
+                                </div>  
+                            </div>
+                            <div class="userInformationInfoList">
+                                <p class="userInformationInfoListName"><b>Здравствуйте, Георгий</b></p>
+                                <p class="userInformationInfoListNumber">+79999999999</p>
+                                <a href="#" class="userInformationInfoListEditProfile"><img src="../img/icon/scores.svg"
+                                        alt="">Баллы: 5</a>
+                                <a href="#" class="userInformationInfoListEditProfile"><img
+                                        src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                            </div>
+                        </div>
+                        <a href="#" class="userInformationButton">
+                            <button>Выйти</button>
+                        </a>
+                    </div>
+                </div>
+                <div class="buttonChangingPersonalData">
+                    <button type="submit">Изменить личные данные</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="fifthSection">
+        <div class="container">
+            <h6>Забронированные авто сейчас</h6>
+            <h5>
+                <span>Здесь пока</span> ничего нет :(
+            </h5>
+            <form method="post" class="form-booking-now">
+                <div class="bookingBlock">
+                    <div class="bookingBlockHeader">
+                        <div class="bookingBlockLeft">
+                            <p class="MyOrderHeaderTitle">
+                                ID: #3473758
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bookingInfo">
+                        <div class="bookingInfoImg">
+                            <img src="../img/booking-img/1.png" alt="">
+                        </div>
+                        <div class="bookingInfoDesc">
+                            <div class="nameOfTheCar">
+                                Ferrari F12 Berlinetta
+                            </div>
+                            <div class="licensePlateNumberOfTheCar">
+                                Госномер: Л228ОХ
+                            </div>
+                            <div class="bookingDate">
+                                Дата бронирования: 24.10.2020, 11:33
+                            </div>
+                            <div class="returnDate">
+                                Дата возврата: 29.10.2020, 11:33
+                            </div>
+                            <div class="totalNumberOfDays">
+                                Итоговое количество дней: 5 дней
+                            </div>
+                            <div class="branch">
+                                Филиал: Росстовский
+                            </div>
+                            <div class="classAuto">
+                                Класс: Премиум
+                            </div>
+                            <div class="statusAuto">
+                                Статус: В наличии
+                            </div>
+                            <div class="сostOfBooking">
+                                <span>Стоимость бронирования:</span> 49.500 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MyOrderDescription">
+                        <div class="MyOrderDescriptionPadding">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="bookingBlock">
+                    <div class="bookingBlockHeader">
+                        <div class="bookingBlockLeft">
+                            <p class="MyOrderHeaderTitle">
+                                ID: #3473758
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bookingInfo">
+                        <div class="bookingInfoImg">
+                            <img src="../img/booking-img/2.png" alt="">
+                        </div>
+                        <div class="bookingInfoDesc">
+                            <div class="nameOfTheCar">
+                                Buick Avista
+                            </div>
+                            <div class="licensePlateNumberOfTheCar">
+                                Госномер: Л229ОХ
+                            </div>
+                            <div class="bookingDate">
+                                Дата бронирования: 24.10.2020, 11:33
+                            </div>
+                            <div class="returnDate">
+                                Дата возврата: 29.10.2020, 11:33
+                            </div>
+                            <div class="totalNumberOfDays">
+                                Итоговое количество дней: 5 дней
+                            </div>
+                            <div class="branch">
+                                Филиал: Росстовский
+                            </div>
+                            <div class="classAuto">
+                                Класс: Премиум
+                            </div>
+                            <div class="statusAuto">
+                                Статус: В наличии
+                            </div>
+                            <div class="сostOfBooking">
+                                <span>Стоимость бронирования:</span> 49.500 руб.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="MyOrderDescription">
+                        <div class="MyOrderDescriptionPadding">
+                            
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-user">
+        <div class="container">
+            <div class="footerBlock-user">
+                <a class="numberFoot-user" href="">8 (800) 110-10-10</a>
+                <a href="">ООО «Индекс драйв», ОГРН</a>
+            </div>
+            <div class="footerBlock-user">
+                <h6>Личный кабинет</h6>
+                <a href="profile.html">Личный кабинет</a>
+            </div>
+            <div class="footerBlock-user">
+                <h6>Информация</h6>
+                <a>Акции</a>
+                <a href="booking.html">Бронирования</a>
+                <a href="history.html">История</a>
+                <a>Новости</a>
+                <a href="branches.html">Филиалы</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<!-- frontend functionality on this page -->
+<script src="../js/frontend/profile.js"></script>
+<!-- modalCards function -->
+<script src="../js/frontend/nav.js"></script>
+<script src="../js/frontend/modalCards.js"></script>
+<script src="../js/frontend/modalCards.js"></script>
+<script src="../js/frontend/modalUser.js"></script>
+
+</html>

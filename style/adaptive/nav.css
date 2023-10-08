@@ -1,0 +1,166 @@
+.nav-user-icon{
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff !important;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* nav style start */
+nav {
+    width: 100%;
+    height: 160px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    position: relative;
+}
+
+.logo {
+    width: 213px;
+    height: 105px;
+    background-image: url(../../img/logo/index_drive-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+.nav-text>div,
+.nav-text>a {
+    margin-left: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+/* nav style end */
+
+.nav-text .auth-text {
+    cursor: pointer;
+}
+
+.nav-text>div,
+.nav-text>a {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+/* nav style end */
+
+@media (max-width: 820px) {
+    .nav-text a {
+        display: none;
+    }
+
+    .menu-btn {
+        display: inline;
+    }
+}
+
+@media (max-width: 540px) {
+    .menu div {
+        top: 130px
+    }
+
+    .style-text {
+        font-size: 20px;
+    }
+
+    nav {
+        height: 130px;
+    }
+} 
+
+@media (max-width: 480px) {
+    .logo {
+        width: 149px;
+        height: 62px;
+    }
+}
+
+@media (max-width: 414px) {
+    .style-text {
+        font-size: 18px;
+    }
+
+    .nav-text>div {
+        margin-left: 15px;
+    }
+
+    .logo {
+        width: 149px;
+        height: 62px;
+    }
+}
+
+@media (max-width: 395px) {
+    .logo {
+        width: 130px;
+        height: 49px;
+    }
+}
+
+@media (max-width: 375px) {
+    .logo {
+        width: 130px;
+        height: 49px;
+    }
+}
+
+@media (max-width: 320px) {
+    /* nav style start */
+    .logo {
+        width: 130px;
+        height: 49px;
+    }
+
+    nav {
+        height: 130px;
+    }
+
+    .auth-text {
+        font-size: 20px;
+    }
+
+    .menu div {
+        height: 21vh;
+    }
+
+    .style-text {
+        flex-direction: column;
+    }
+    /* nav style end */
+}

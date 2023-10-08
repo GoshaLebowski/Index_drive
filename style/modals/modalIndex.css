@@ -1,0 +1,223 @@
+.modalScrin {
+  display: none;
+}
+
+.modalScrin.active {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.modalScrinRegister {
+  display: none;
+}
+
+.modalScrinRegister.active {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 9999;
+}
+
+.auth-form {
+  position: relative;
+}
+
+.modalWindow {
+  min-width: 500px;
+  padding: 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modalWindowHead {
+  font-family: 'InterBold';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27.895px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.form-floating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.form-control {
+  padding: 12px;
+  padding-left: 40px;
+  background-color: transparent;
+  border: 1px solid #D1D1D1;
+  border-radius: 10px;
+  transition: all .15s;
+  outline: none;
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 19px;
+  color: #797979;
+  resize: none;
+}
+
+.mb {
+  margin-bottom: 16px;
+}
+
+.form-floating label {
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 19px;
+  color: #323232;
+  margin-bottom: 9px;
+}
+
+.form-floating-img {
+  width: 25px;
+  position: absolute;
+  left: 10px;
+  top: 40px;
+}
+
+.form-floating-img-user {
+  width: 22px;
+  position: absolute;
+  left: 11px;
+  top: 37px;
+}
+
+.form-floating-img-pasword {
+  width: 23px;
+  position: absolute;
+  right: 14px;
+  top: 40px;
+  cursor: pointer;
+}
+
+.form-button-a-cont-auth,
+.form-button-a-cont-reg {
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.form-button-a-cont-auth button {
+  position: relative;
+  background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 19px;
+  display: inline-block;
+  padding: 16px 197px;
+  border: none;
+}
+
+.form-button-a-cont-auth button::before {
+  position: absolute;
+  content: '';
+  width: 1.5em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-button-a-cont-auth button:hover::before {
+  animation: move-lightThree 0.7s;
+}
+
+@keyframes move-lightThree {
+  0% {
+    transform: translateX(-2em) skewX(-25deg);
+  }
+
+  100% {
+    transform: translateX(25em) skewX(-25deg);
+  }
+}
+
+.form-button-a-cont-reg button {
+  position: relative;
+  background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+  border-radius: 10px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 19px;
+  display: inline-block;
+  padding: 16px 128px;
+  border: none;
+}
+
+.form-button-a-cont-reg button::before {
+  position: absolute;
+  content: '';
+  width: 1.5em;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.6);
+  transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-button-a-cont-reg button:hover::before {
+  animation: move-lightFour 0.7s;
+}
+
+@keyframes move-lightFour {
+  0% {
+    transform: translateX(-2em) skewX(-25deg);
+  }
+
+  100% {
+    transform: translateX(25em) skewX(-25deg);
+  }
+}
+
+.form-text-who {
+  font-family: 'InterRegular';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.94px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+  margin-top: 19px;
+}
+
+.form-text-who a {
+  font-family: 'InterExtraBold';
+  text-decoration: none;
+  background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  cursor: pointer;
+}
+
+.close-form {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  cursor: pointer;
+}

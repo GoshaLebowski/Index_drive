@@ -1,0 +1,266 @@
+/* auto booking style start */
+hr {
+    display: none;
+}
+
+.sixthSection {
+    display: flex;
+    justify-content: center;
+}
+
+.sixthSection h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.sixthSection h5 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.sixthSection h5 span {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #061E42;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.seventhSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.mr-l-id {
+    margin-left: 50px;
+}
+
+.selectAuto-label {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute; 
+}
+
+.selectAuto-label:hover,
+.selectAuto-label:focus-within {
+    background: hsla(0, 0%, 80%, .14);
+}
+
+.selectAuto-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.selectAuto-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background: linear-gradient(to right bottom, hsl(150, 1%, 52%), hsl(0, 0%, 23%));
+    position: relative;
+}
+
+.selectAuto-design::before {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(0deg 0.63% 65.36%);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.selectAuto-input:checked+.selectAuto-design::before {
+    transform: scale(0);
+} 
+
+.seventhSection h5 {
+    font-family: 'InterExtraBold';
+    font-size: 19px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.bookingBlock {
+    background: #FFFFFF;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 0 1px rgba(13, 35, 67, .07), 0 5px 15px -8px rgba(13, 35, 67, .4);
+    margin-bottom: 20px;
+    width: 96%;
+    margin-bottom: 50px;
+}
+
+.bookingBlockLeft {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #797979;
+}
+
+.bookingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.bookingInfoImg {
+    width: 406px;
+}
+
+.bookingInfoImg img {
+    width: 586px;
+    height: 277px;
+}
+
+.bookingInfoDesc div {
+    margin-bottom: 15px;
+}
+
+.bookingInfoDesc {
+    font-family: 'InterRegular';
+    width: 462px;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.bookingInfoDesc .nameOfTheCar {
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+.сostOfBooking {
+    font-weight: 600;
+}
+
+.сostOfBooking span {
+    color: #000000;
+}
+
+.bookingBlock {
+    background: #FFFFFF;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 0 1px rgba(13, 35, 67, .07), 0 5px 15px -8px rgba(13, 35, 67, .4);
+    margin-bottom: 20px;
+    width: 96%;
+    margin-bottom: 50px;
+}
+
+.bookingBlockLeft {
+    font-style: normal;
+    font-size: 20px;
+    line-height: 19px;
+    color: #797979;
+    display: flex;
+}
+
+.bookingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.bookingInfoImg {
+    width: 406px;
+}
+
+.bookingInfoImg img {
+    width: 586px;
+    height: 277px;
+}
+
+.bookingInfoDesc div {
+    margin-bottom: 15px;
+}
+
+.bookingInfoDesc {
+    font-family: 'InterRegular';
+    width: 462px;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.bookingInfoDesc .nameOfTheCar {
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+.сostOfBooking {
+    font-weight: 600;
+}
+
+.сostOfBooking span {
+    color: #000000;
+}
+
+.costAndDiscount {
+    display: inline-block;
+}
+
+.costAndDiscount .c-a-d-labelContentAll, span {
+    font-family: 'InterExtraBold';
+    font-size: 20px;
+}
+
+.spanCalculatedDiscount, .spanDiscount {
+    color: #409423;
+}
+
+.discountedAmount {
+    position: relative;
+    color: #14326D;
+}
+
+.discountedAmount:before {
+    content: "";
+    border-bottom: 2px solid #14326D;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: rotate(-12deg);
+}
+
+.calculatedDiscount {
+    margin-top: 8px;
+}

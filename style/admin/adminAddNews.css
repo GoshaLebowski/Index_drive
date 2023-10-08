@@ -1,0 +1,222 @@
+nav {
+    width: 100%;
+    height: 160px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 213px;
+    height: 105px;
+    background-image: url(../../img/logo/index_drive-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.nav-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+.nav-text>div,
+.nav-text>a {
+    margin-left: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+/* nav style end */
+
+/* add news and delete news style start */
+.mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.centerSearch {
+    display: flex;
+    justify-content: center;
+}
+
+.bankCardsInputAndButton {
+    display: flex;
+    width: 587px;
+    justify-content: space-between;
+}
+
+.bankCardsInputAndButton .buttonChangeCard {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 0px 10px 10px 0;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 9px 13px;
+    border: none;
+}
+
+.bankCardsInputAndButton .buttonChangeCard img {
+    width: 29px;
+    height: 29px;
+    margin-top: 4px;
+}
+
+.input-form-contrl-bank {
+    padding: 12px;
+    padding-left: 20px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px 0px 0px 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    width: 493px;
+    height: 30px;
+}
+
+.addNewNews {
+    margin: auto;
+    margin-top: 30px;
+}
+
+.but-addNewNews img {
+    width: 42px;
+    height: 36px;
+    position: relative;
+    top: 2px;
+    left: 0px;      
+}
+
+.addNewNews button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 10px 10px;
+    border: none;
+}
+
+.addNewNews label {
+    font-family: 'InterBold';
+    font-weight: 400;
+    font-size: 19px;
+    color: #676767;
+    position: relative;
+    top: -11px;
+    left: 11px;
+}
+
+/* news style start */
+
+.news {
+    margin-top: 45px;
+    display: inline-block;
+    margin-bottom: 78px;
+}
+
+.listNews {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 52px;
+}
+
+.listNewsImg {
+    margin-right: 8px;
+}
+
+.listNewsDesc {
+    position: relative;
+}
+
+.titleNews {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.listNewsDesc p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #676767;
+}
+
+.listNewsDesc .date {
+    font-weight: 400;
+    font-size: 16px;
+    color: #BEBEBE;
+    position: absolute;
+    top: 292px;
+}
+
+.deleteNews {
+    margin: auto;
+    margin-top: 30px;
+    position: absolute;
+    top: 222px;
+    left: 857px;
+}
+
+.but-deleteNews img {
+    width: 42px;
+    height: 36px;
+    position: relative;
+    top: 2px;
+    left: 0px;      
+}
+
+.deleteNews button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    padding: 10px 10px;
+    border: none;
+}
+/* add news and delete news style end */

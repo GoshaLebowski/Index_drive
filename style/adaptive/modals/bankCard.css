@@ -1,0 +1,914 @@
+@media (max-width: 1000px) {
+    .modalWindowCards {
+        min-width: 900px;
+        padding: 25px;
+    }
+
+    .form-control-cards {
+        width: 651px;
+    }
+
+    .inputDisabled:disabled {
+        width: 651px;
+    }
+
+    .form-button-select-a-card button::before {
+        display: none;
+    }
+
+    .form-button-add-a-card span::before {
+        display: none;
+    }
+}
+
+@media (max-width: 820px) {
+    .modalWindowCards {
+        min-width: 800px;
+        padding: 0px;
+    }
+
+    .form-button-add-a-card span {
+        font-size: 17px;
+        padding: 16px 80px;
+    }
+
+    .form-button-select-a-card button {
+        font-size: 17px;
+        padding: 16px 80px;
+    }
+
+    .modalWindowCardsHead {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .form-control-cards {
+        width: 560px;
+    }
+
+    .inputDisabled:disabled {
+        width: 560px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modalWindowCards {
+        min-width: 730px;
+    }
+
+    .form-control-cards {
+        width: 500px;
+    }
+
+    .inputDisabled:disabled {
+        width: 500px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modalWindowCards {
+        min-width: 580px;
+    }
+
+    .form-control-cards {
+        width: 365px;
+    }
+
+    .inputDisabled:disabled {
+        width: 365px;
+    }
+
+    .form-button-add-a-card span {
+        padding: 16px 40px;
+    }
+
+    .form-button-select-a-card button {
+        padding: 16px 40px;
+    }
+
+    .modalWindowCardsHead {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 540px) {
+    .modalWindowCards {
+        min-width: 520px;
+    }
+
+    .form-control-cards {
+        width: 310px;
+    }
+
+    .inputDisabled:disabled {
+        width: 310px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalWindowCards {
+        min-width: 460px;
+    }
+
+    .form-control-cards {
+        width: 255px;
+    }
+
+    .inputDisabled:disabled {
+        width: 255px;
+    }
+
+    .form-button-add-a-card span {
+        padding: 16px 30px;
+    }
+
+    .form-button-select-a-card button {
+        padding: 16px 30px;
+    }
+}
+
+@media (max-width: 414px) {
+    .modalWindowCards {
+        min-width: 400px;
+    }
+
+    .form-control-cards {
+        width: 200px;
+    }
+
+    .inputDisabled:disabled {
+        width: 200px;
+    }
+
+    .form-button-add-a-card span {
+        padding: 16px 21px;
+        font-size: 15px;
+    }
+
+    .form-button-select-a-card button {
+        padding: 16px 25px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 395px) {
+    .modalWindowCards {
+        min-width: 375px;
+    }
+
+    .form-control-cards {
+        width: 177px;
+    }
+
+    .inputDisabled:disabled {
+        width: 177px;
+    }
+
+    .modalWindowCardsHead {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modalWindowCards {
+        min-width: 360px;
+    }
+
+    .form-button-add-a-card span {
+        padding: 16px 16px;
+    }
+
+    .form-button-select-a-card button {
+        padding: 16px 16px;
+    }
+
+    .form-control-cards {
+        width: 165px;
+    }
+
+    .inputDisabled:disabled {
+        width: 165px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modalWindowCards {
+        min-width: 345px;
+    }
+
+    .form-control-cards {
+        width: 150px;
+    }
+
+    .inputDisabled:disabled {
+        width: 150px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalWindowCards {
+        min-width: 300px;
+    }
+
+    .form-control-cards {
+        width: 110px;
+    }
+
+    .inputDisabled:disabled {
+        width: 110px;
+    }
+
+    .form-button-add-a-card span {
+        padding: 16px 10px;
+        font-size: 14px;
+    }
+
+    .form-button-select-a-card button {
+        padding: 16px 10px;
+        font-size: 14px;
+    }
+
+    .modalWindowCardsHead {
+        font-size: 22px;
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    .modalWindowCardsCreate {
+        min-width: 870px;
+    }
+
+    .f-c-inputOne {
+        left: 112px;
+    }
+
+    .f-c-inputTwo {
+        left: 112px;
+    }
+
+    .f-c-inputThree {
+        left: 588px;
+    }
+
+    .imgCardFront {
+        left: 59px;
+    }
+
+    .imgCardBack {
+        left: 248px;
+    }
+
+    .buttonsCardsCreate {
+        left: 242px;
+    }
+}
+
+@media (max-width: 820px) {
+    .modalWindowCardsCreate {
+        min-width: 720px;
+    }
+
+    .f-c-inputOne {
+        left: 45px;
+    }
+
+    .f-c-inputTwo {
+        left: 45px;
+    }
+
+    .f-c-inputThree {
+        left: 520px;
+    }
+
+    .imgCardFront {
+        left: -7px;
+    }
+
+    .imgCardBack {
+        left: 180px;
+    }
+
+    .buttonsCardsCreate {
+        left: 214px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modalWindowCardsCreate {
+        min-width: 680px;
+        padding: 25px;
+    }
+
+    .imgCard {
+        width: 620px;
+    }
+
+    .f-c-inputOne {
+        left: 55px;
+        top: 165px;
+    }
+
+    .f-c-inputTwo {
+        left: 55px;
+        top: 218px;
+    }
+
+    .f-c-inputThree {
+        left: 503px;
+        top: 234px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        width: 288px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 100px;
+    }
+
+    .imgCardFront {
+        left: 5px;
+        top: -7px;
+        height: 288px;
+    }
+
+    .imgCardBack {
+        left: 180px;
+        top: 170px;
+        height: 288px;
+    }
+
+    .buttonsCardsCreate {
+        left: 214px;
+    }
+}
+
+@media (max-width: 600px) {
+    .modalWindowCardsCreate {
+        min-width: 500px;
+        padding: 5px;
+    }
+
+    .imgCard {
+        width: 580px;
+    }
+
+    .f-c-inputOne {
+        left: 40px;
+        top: 137px;
+    }
+
+    .f-c-inputTwo {
+        left: 40px;
+        top: 188px;
+    }
+
+    .f-c-inputThree {
+        left: 322px;
+        top: 280px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        width: 265px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 78px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 11.5px;
+    }
+
+    .imgCardFront {
+        left: 12px;
+        top: -7px;
+        height: 250px;
+        box-shadow: 30px 29px 8px rgba(0, 0, 0, 0.52);
+    }
+
+    .imgCardBack {
+        left: 53px;
+        top: 197px;
+        height: 250px;
+    }
+
+    .buttonsCardsCreate {
+        left: 150px;
+    }
+}
+
+@media (max-width: 540px) {
+    .modalWindowCardsCreate {
+        min-width: 500px;
+        padding: 5px;
+        height: 644px;
+    }
+
+    .f-c-inputOne {
+        left: 55px;
+        top: 136px;
+    }
+
+    .f-c-inputTwo {
+        left: 55px;
+        top: 181px;
+    }
+
+    .f-c-inputThree {
+        left: 322px;
+        top: 280px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        width: 225px;
+        font-size: 20px;
+        padding-left: 50px;
+        height: 13px;
+    }
+
+    .f-c-inputStyleNameCard {
+        height: 13px;
+        width: 117px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 56px;
+        height: 13px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 8.5px;
+        left: 9px;
+    }
+
+    .f-c-iconToInputNameCard {
+        left: 12px;
+        top: 7.5px;
+    }
+
+    .f-c-iconToInputDateCard {
+        left: 186px;
+        top: 7.5px;
+    }
+
+    .imgCardFront {
+        left: 12px;
+        top: -7px;
+        height: 250px;
+        box-shadow: 30px 29px 8px rgba(0, 0, 0, 0.52);
+    }
+
+    .imgCardBack {
+        left: 53px;
+        top: 197px;
+        height: 250px;
+    }
+
+    .buttonsCardsCreate {
+        left: 145px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalWindowCardsCreate {
+        min-width: 460px;
+        padding: 0px;
+        height: 650px;
+    }
+
+    .f-c-inputOne {
+        left: 52px;
+        top: 128px;
+    }
+
+    .f-c-inputTwo {
+        left: 52px;
+        top: 174px;
+    }
+
+    .f-c-inputThree {
+        left: 288px;
+        top: 274px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        width: 225px;
+        font-size: 20px;
+        padding-left: 50px;
+        height: 13px;
+    }
+
+    .f-c-inputStyleNameCard {
+        height: 13px;
+        width: 117px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 56px;
+        height: 13px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 8.5px;
+        left: 9px;
+    }
+
+    .f-c-iconToInputNameCard {
+        left: 12px;
+        top: 7.5px;
+    }
+
+    .f-c-iconToInputDateCard {
+        left: 186px;
+        top: 7.5px;
+    }
+
+    .imgCardFront {
+        left: 12px;
+        top: -7px;
+        height: 235px;
+        box-shadow: 30px 29px 8px rgba(0, 0, 0, 0.52);
+    }
+
+    .imgCardBack {
+        left: 40px;
+        top: 197px;
+        height: 235px;
+    }
+
+    .buttonsCardsCreate {
+        left: 135px;
+    }
+}
+
+@media (max-width: 414px) {
+    .modalWindowCardsCreate {
+        min-width: 410px;
+        height: 660px;
+    }
+
+    .f-c-inputOne {
+        left: 45px;
+        top: 128px;
+    }
+
+    .f-c-inputTwo {
+        left: 46px;
+        top: 174px;
+    }
+
+    .f-c-inputThree {
+        left: 252px;
+        top: 316px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        width: 225px;
+        font-size: 20px;
+        padding-left: 50px;
+        height: 13px;
+    }
+
+    .f-c-inputStyleNameCard {
+        height: 13px;
+        width: 117px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 56px;
+        height: 13px;
+        margin-left: 3px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 8.5px;
+        left: 9px;
+    }
+
+    .f-c-iconToInputNameCard {
+        left: 12px;
+        top: 7.5px;
+    }
+
+    .f-c-iconToInputDateCard {
+        left: 186px;
+        top: 7.5px;
+    }
+
+    .imgCardFront {
+        left: 5px;
+        top: -7px;
+        height: 230px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.44);
+    }
+
+    .imgCardBack {
+        left: 7px;
+        top: 241px;
+        height: 230px;
+    }
+
+    .buttonsCardsCreate {
+        left: 125px;
+        top: 450px;
+    }
+}
+
+@media (max-width: 395px) {
+    .modalWindowCardsCreate {
+        min-width: 385px;
+        height: 680px;
+    }
+
+    .f-c-inputOne {
+        left: 35px;
+        top: 128px;
+    }
+
+    .f-c-inputTwo {
+        left: 36px;
+        top: 174px;
+    }
+
+    .f-c-inputThree {
+        left: 238px;
+        top: 316px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        width: 225px;
+        font-size: 20px;
+        padding-left: 50px;
+        height: 13px;
+    }
+
+    .f-c-inputStyleNameCard {
+        height: 13px;
+        width: 117px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 56px;
+        height: 13px;
+        margin-left: 3px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 8.5px;
+        left: 9px;
+    }
+
+    .f-c-iconToInputNameCard {
+        left: 12px;
+        top: 7.5px;
+    }
+
+    .f-c-iconToInputDateCard {
+        left: 186px;
+        top: 7.5px;
+    }
+
+    .imgCardFront {
+        left: -5px;
+    }
+
+    .imgCardBack {
+        left: -5px;
+    }
+
+    .buttonsCardsCreate {
+        left: 110px;
+        top: 450px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modalWindowCardsCreate {
+        min-width: 363px;
+        height: 680px;
+    }
+
+    .f-c-inputOne {
+        left: 33px;
+        top: 129px;
+    }
+
+    .f-c-inputTwo {
+        left: 33px;
+        top: 174px;
+    }
+
+    .f-c-inputThree {
+        left: 219px;
+        top: 311px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        width: 225px;
+        font-size: 20px;
+        padding-left: 50px;
+        height: 13px;
+    }
+
+    .f-c-inputStyleNameCard {
+        height: 13px;
+        width: 117px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 56px;
+        height: 13px;
+        margin-left: 3px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 8.5px;
+        left: 9px;
+    }
+
+    .f-c-iconToInputNameCard {
+        left: 12px;
+        top: 7.5px;
+    }
+
+    .f-c-iconToInputDateCard {
+        left: 186px;
+        top: 7.5px;
+    }
+
+    .imgCardFront {
+        top: 4px;
+        height: 217px;
+        left: -5px;
+    }
+
+    .imgCardBack {
+        left: -5px;
+        height: 217px;
+    }
+
+    .buttonsCardsCreate {
+        left: 105px;
+        top: 450px;
+    }
+}
+
+@media (max-width: 360px) {
+    .modalWindowCardsCreate {
+        min-width: 354px;
+        height: 680px;
+    }
+
+    .f-c-inputOne {
+        left: 28px;
+        top: 128px;
+    }
+
+    .f-c-inputTwo {
+        left: 28px;
+        top: 172px;
+    }
+
+    .f-c-inputThree {
+        left: 219px;
+        top: 310px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        font-size: 19px;
+    }
+
+    .f-c-inputStyleNameCard {
+        height: 13px;
+        width: 117px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 56px;
+        height: 13px;
+        margin-left: 3px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 8.5px;
+        left: 9px;
+    }
+
+    .f-c-iconToInputNameCard {
+        left: 12px;
+        top: 7.5px;
+    }
+
+    .f-c-iconToInputDateCard {
+        left: 186px;
+        top: 7.5px;
+    }
+
+    .imgCardFront {
+        top: 4px;
+        height: 215px;
+        left: -8px;
+    }
+
+    .imgCardBack {
+        left: -7px;
+        height: 215px;
+    }
+
+    .buttonsCardsCreate {
+        left: 103px;
+        top: 450px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalWindowCardsCreate {
+        min-width: 315px;
+        height: 650px;
+    }
+
+    .f-c-inputOne {
+        left: -3px;
+        top: 116px;
+    }
+
+    .f-c-inputTwo {
+        left: -2px;
+        top: 157px;
+    }
+
+    .f-c-inputThree {
+        left: 185px;
+        top: 305px;
+    }
+
+    .f-c-inputStyleNumberCard {
+        font-size: 19px;
+        height: 10px;
+    }
+
+    .f-c-inputStyleNameCard {
+        height: 10px;
+        width: 117px;
+    }
+
+    .f-c-inputStyleDateCard {
+        width: 56px;
+        height: 10px;
+        margin-left: 3px;
+    }
+
+    .f-c-iconToInputNumberCard {
+        width: 35px;
+        top: 6.5px;
+        left: 9px;
+    }
+
+    .f-c-iconToInputNameCard {
+        left: 12px;
+        top: 4.5px;
+    }
+
+    .f-c-iconToInputDateCard {
+        left: 186px;
+        top: 5.5px;
+    }
+
+    .imgCardFront {
+        top: 4px;
+        height: 195px;
+        left: -9px;
+    }
+
+    .imgCardBack {
+        left: -7px;
+        height: 195px;
+    }
+
+    .buttonsCardsCreate {
+        left: 95px;
+        top: 419px;
+    }
+
+    .f-c-iconToInputCVC {
+        height: 3px;
+        width: 39px;
+    }
+
+    .f-c-iconToInputCVCCard {
+        width: 19px;
+        left: 12px;
+        top: 4.5px;
+    }
+}

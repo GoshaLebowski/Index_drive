@@ -1,0 +1,230 @@
+nav {
+    width: 100%;
+    height: 160px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 213px;
+    height: 105px;
+    background-image: url(../../img/logo/index_drive-logo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.nav-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+
+.nav-text>div,
+.nav-text>a {
+    margin-left: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+}
+/* nav style end */
+
+/* adding an auto style start */
+.mainSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #303030;
+    margin-bottom: 27px;
+}
+
+.container h5 {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+
+.blockAdditonalSettings {
+    margin: 0 auto;
+    width: 493px;
+}
+
+.blockAdditonalSettingsInfo {
+    background: #FFFFFF;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 0 1px rgba(13, 35, 67, .07), 0 5px 15px -8px rgba(13, 35, 67, .4);
+    margin-bottom: 11px;
+    margin-top: 11px;
+    width: 441px;
+    height: 100%;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.descAdditonalSettings {
+    font-family: 'InterRegular';
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+.form-floating {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.form-control {
+    padding: 12px;
+    padding-left: 55px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    width: 500px;
+    height: 30px;
+}
+
+.input-form-contrl-bank {
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px 0px 0px 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    width: 351px;
+    height: 30px;
+}
+
+.bankCardsInputAndButton .buttonChangeCard {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 0px 10px 10px 0;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 9px 13px;
+    border: none;
+    top: 6px;
+}
+
+.bankCardsInputAndButton .buttonChangeCard img {
+    padding-top: 16px;
+    padding-bottom: 13px;
+}
+
+.buttonChangeCard button {
+    background: none;
+    border: none;
+}
+
+.mb {
+    margin-bottom: 16px;
+}
+
+.form-floating label {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+}
+
+.form-button-add-a-card {
+    margin: 0 auto;
+    width: 360px;
+    margin-top: 21px;
+}
+
+.form-button-add-a-card span {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 16px 125px;
+    border: none;
+}
+
+.form-button-add-a-card span::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-button-add-a-card span:hover::before {
+    animation: move-lightThree 0.7s;
+}
+
+@keyframes move-lightThree {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(25em) skewX(-25deg);
+    }
+}
+
+/* adding and edit an auto style end */

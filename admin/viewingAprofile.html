@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/admin/viewingAprofile.css">
+    <title>INDEX DRIVE - просмотр пользователя</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Admin ID:#2325</b></p>
+                </div>
+            </div>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="viewingAprofile.html" class="logo"></a>
+            <div class="nav-text">
+                <div class="nav-user-icon" onclick="ProfileModalActive()">admin</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <h6>Просмотр профиля</h6>
+            <h5>Лобов Георгий Александрович</h5>
+
+            <form action="">
+                <div class="formWithUserData">
+                    <div class="dataInfo">
+                        <form name="regForm" method="post" class="auth-form">
+                            <div class="form-floating mb">
+                                <label for="floatingInput">Фамилия Имя Отчество</label>
+                                <input type="text" class="form-control" name="name" id="floatingInput"
+                                    placeholder="Введите ФИО" value="Лобов Георгий Александрович" disabled>
+                                <img class="form-floating-img-user" src="../img/icon/iconUser.svg" alt="">
+                            </div>
+                            <div class="form-floating mb">
+                                <label for="floatingInput">Паспортные данные</label>
+                                <input type="text" class="form-control pasportFormat" name="email" id="floatingInput"
+                                    placeholder="Введите паспортные данные" value="2345 253352" disabled>
+                                <img class="form-floating-img" src="../img/icon/iconPassport.svg" alt="">
+                            </div>
+                            <div class="form-floating mb">
+                                <label for="floatingInput">Дата рождения</label>
+                                <input type="date" class="form-control dateFormat" value="2004-02-03" name="dateOfBirth"
+                                    id="floatingInput" placeholder="Введите дату рождения" value="" disabled>
+                                <img class="form-floating-img" src="../img/icon/dateOfBirth.svg" alt="">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="userInformation">
+                        <div class="userInformationInfo">
+                            <div class="userInformationAvatar">
+                                <div class="userInformationInfoAvatar">Г</div>
+                            </div>
+                            <div class="userInformationInfoList">
+                                <p class="userInformationInfoListName"><b>Георгий</b></p>
+                                <p class="userInformationInfoListNumber">+79999999999</p>
+                                <a class="userInformationInfoListEditProfile"><img src="../img/icon/scores.svg"
+                                        alt="">Баллы: 5</a>
+                                <a class="userInformationInfoListEditProfile"><img
+                                        src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="sixthSection">
+        <div class="container">
+            <h5>Бронированные машины</h5>
+
+            <div class="bookingBlock">
+                <div class="bookingBlockHeader">
+                    <div class="bookingBlockLeft">
+                        <p class="MyOrderHeaderTitle mr-l-id">
+                            <span class="orderNumber">Номер заказа:</span> 79832457
+                        </p>
+                    </div>
+                </div>
+                <p class="MyOrderHeaderTitle styleIdAuto mr-l-id">
+                    ID: #3473758
+                </p>
+                <div class="bookingInfo">
+                    <div class="bookingInfoImg">
+                        <img src="../img/booking-img/1.png" alt="">
+                    </div>
+                    <div class="bookingInfoDesc">
+                        <div class="nameOfTheCar">
+                            Ferrari F12 Berlinetta
+                        </div>
+                        <div class="licensePlateNumberOfTheCar">
+                            Госномер: Л228ОХ
+                        </div>
+                        <div class="bookingDate">
+                            Дата бронирования: 24.10.2020, 11:33
+                        </div>
+                        <div class="returnDate">
+                            Дата возврата: 29.10.2020, 11:33
+                        </div>
+                        <div class="totalNumberOfDays">
+                            Итоговое количество дней: 5 дней
+                        </div>
+                        <div class="branch">
+                            Филиал: Росстовский
+                        </div>
+                        <div class="classAuto">
+                            Класс: Премиум
+                        </div>
+                        <div class="statusAuto">
+                            Статус: В наличии
+                        </div>
+                        <div class="сostOfBooking">
+                            <span>Стоимость бронирования:</span> 49.500 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="MyOrderDescription">
+                    <div class="MyOrderDescriptionPadding">
+                        Суперкар появился в 2012 году, производитель Ferrari (Феррари), располагающийся в стране
+                        Италия. Двигатель Ferrari F12 Berlinetta объёмом 6262 см³ развивает мощность 740 лошадиных
+                        сил, что позволяет автомобилю разгоняться до 100 километров в час за 3.1 секунды и развивать
+                        максимальную скорость 340 км/ч. Цена Ferrari F12 Berlinetta - 320 000 $ или 21 120 000 ₽.
+                    </div>
+                </div>
+            </div>
+
+            <div class="bookingBlock">
+                <div class="bookingBlockHeader">
+                    <div class="bookingBlockLeft">
+                        <p class="MyOrderHeaderTitle mr-l-id">
+                            <span class="orderNumber">Номер заказа:</span> 34567784
+                        </p>
+                    </div>
+                </div>
+                <p class="MyOrderHeaderTitle styleIdAuto mr-l-id">
+                    ID: #2537432
+                </p>
+                <div class="bookingInfo">
+                    <div class="bookingInfoImg">
+                        <img src="../img/booking-img/2.png" alt="">
+                    </div>
+                    <div class="bookingInfoDesc">
+                        <div class="nameOfTheCar">
+                            Buick Avista
+                        </div>
+                        <div class="licensePlateNumberOfTheCar">
+                            Госномер: Л229ОХ
+                        </div>
+                        <div class="bookingDate">
+                            Дата бронирования: 24.10.2020, 11:33
+                        </div>
+                        <div class="returnDate">
+                            Дата возврата: 29.10.2020, 11:33
+                        </div>
+                        <div class="totalNumberOfDays">
+                            Итоговое количество дней: 5 дней
+                        </div>
+                        <div class="branch">
+                            Филиал: Росстовский
+                        </div>
+                        <div class="classAuto">
+                            Класс: Премиум
+                        </div>
+                        <div class="statusAuto">
+                            Статус: В наличии
+                        </div>
+                        <div class="сostOfBooking">
+                            <span>Стоимость бронирования:</span> 49.500 руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="MyOrderDescription">
+                    <div class="MyOrderDescriptionPadding">
+                        Концепт Buick Avista был представлен в начале 2016 года на Детройтском автосалоне.
+                        Заднеприводное купе создано на основе укороченной платформы флагманского седана Cadillac CT6. От
+                        этого же автомобиля позаимствован битурбомотор V6 3.0 (405 л. с.) нового семейства GM High
+                        Feature и восьмиступенчатый «автомат». В салоне выставочной машины — четыре полноценных места,
+                        сенсорные экраны и панели.
+                        Возможность появления серийного варианта модели Buick Avista в ближайшие годы не исключается.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="../js/frontend/admin/adminPanel.js"></script>
+
+</html>

@@ -1,0 +1,80 @@
+.modalDoneUser {
+    display: none;
+}
+
+.modalDoneUser.active {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalErrorsUser {
+    display: none;
+}
+
+.modalErrorsUser.active {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalWindowErors {
+    min-width: 350px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    position: relative
+}
+
+.modalWindowDone {
+    min-width: 350px;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    position: relative
+}
+
+.modalWindowErrorsHead {
+    font-family: 'InterBold';
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.desсErrorsUser {
+    font-family: 'InterRegular';
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.desсDoneUser {
+    font-family: 'InterRegular';
+    font-size: 18px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.close-form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    cursor: pointer;
+}

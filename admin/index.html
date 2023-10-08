@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/admin/index.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <title>INDEX DRIVE</title>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a class="logo"></a>
+            <div class="nav-text">
+                <div class="auth-text">Здесь должен быть текст, но его нет</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <h6>Авторизация в админ панель</h6>
+            <h5>Вход</h5>
+            <form name="regForm" method="post" class="auth-form">
+                <div class="form-floating mb">
+                    <label for="floatingInput">Введите логин</label>
+                    <input type="text" class="form-control" name="name" id="floatingInput" placeholder="Логин"></input>
+                    <img class="form-floating-img-user" src="../img/icon/iconUser.svg" alt="">
+                </div>
+                <div class="form-floating mb">
+                    <label for="floatingPassword">Введите пароль</label>
+                    <input type="password" class="form-control floatingPassword1" name="password" id="floatingPassword"
+                        placeholder="Пароль">
+                    <img class="form-floating-img" src="../img/icon/iconPassword.svg" alt="">
+                    <img class="form-floating-img-pasword" src="../img/icon/eye-slashpassvord.svg" alt=""
+                        id="img-paswordTwo" onclick="TogglePasword1()">
+                </div>
+    
+                <div class="form-button-a-cont-reg">
+                    <button class="form-button-reg" type="submit">Войти</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+<script src="../js/frontend/admin/index.js"></script>
+
+</html>

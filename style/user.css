@@ -1,0 +1,413 @@
+/* slider style start */
+.mainSection {
+    width: 100%;
+    padding-top: 20px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 133px;
+}
+
+.mainSection .container {
+    display: flex;
+    justify-content: center;
+}
+
+.sliderSection {
+    width: 1280px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.contentSlideFirst {
+    display: flex;
+    position: inherit;
+}
+
+.contentSlideSecond {
+    display: flex;
+    position: inherit;
+    flex-direction: row-reverse;
+}
+
+.contentSlideThird {
+    display: flex;
+    position: inherit;
+}
+
+.textSlideFirst {
+    width: 776px;
+    height: 585px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 91px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    z-index: 1;
+}
+
+.textSlideSecond {
+    width: 1027px;
+    flex-shrink: 0;
+    color: #000;
+    text-align: right;
+    font-family: 'Ubuntu';
+    font-size: 91px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    z-index: 1;
+}
+
+.textSlideThird {
+    width: 948px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: 'Ubuntu';
+    font-size: 91px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    z-index: 1;
+    margin-left: 34px;
+}
+
+.imgSlideFirst {
+    top: 28px;
+    left: -150px;
+    position: relative;
+    height: 613px;
+    width: 649px;
+}
+
+.imgSlideSecond {
+    top: 21px;
+    left: 420px;
+    position: relative;
+    height: 641px;
+    width: 833px;
+}
+
+.imgSlideThird {
+    top: 81px;
+    left: -320px;
+    position: relative;
+    height: 567px;
+    width: 851px;
+}
+
+/* css for manual slide navigation */
+.navigation-manual {
+    position: absolute;
+    width: 1300px;
+    margin-top: 746px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 4px solid #7C7C7C;
+    padding: 10px;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #7C7C7C;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+/* css for automatic navigation */
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 1300px;
+    justify-content: center;
+    margin-top: 746px;
+}
+
+.navigation-auto div {
+    border: 4px solid #7C7C7C;
+    padding: 10px;
+    border-radius: 40px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #7C7C7C;
+
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #7C7C7C;
+
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #7C7C7C;
+
+}
+
+/* slider style end */
+
+/* article of qualities style start */
+.twoSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 133px;
+}
+
+.twoSection h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+}
+
+.characteristics,
+.consultationButton {
+    display: flex;
+    justify-content: center;
+}
+
+.characteristics {
+    margin-top: 98px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.characteristics article h2 {
+    font-size: 43px;
+}
+
+.characteristics article p {
+    font-size: 22px;
+}
+
+.consultationButton a {
+    position: relative;
+    margin-top: 98px;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 20px 18px;
+}
+
+.consultationButton a::before {
+    content: '';
+    position: absolute;
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-4em) skewX(-45deg);
+}
+
+.consultationButton a:hover::before {
+    animation: move-lightOne 0.5s;
+}
+
+@keyframes move-lightOne {
+    0% {
+        transform: translateX(-4em) skewX(-45deg);
+    }
+
+    100% {
+        transform: translateX(20em) skewX(-45deg);
+    }
+}
+/* article of qualities style end */
+
+/* car search style start */
+.threeSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 133px;
+}
+
+.threeSection h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.carSearch {
+    margin-top: 98px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.styleCarSelect select {
+    border-radius: 9.9625px;
+    margin-bottom: 32px;
+    width: 418.43px;
+    height: 49.81px;
+    padding: 13px;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #797979;
+    border: 0.99625px solid #D1D1D1;
+    background: none;
+    outline: none;
+}
+
+.buttonCarSearch button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 14px 120px;
+    border: none;
+}
+
+.buttonCarSearch button::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-9em) skewX(-45deg);
+}
+
+.buttonCarSearch button:hover::before {
+    animation: move-lightTwo 0.5s;
+}
+
+@keyframes move-lightTwo {
+    0% {
+        transform: translateX(-9em) skewX(-45deg);
+    }
+
+    100% {
+        transform: translateX(24em) skewX(-45deg);
+    }
+}
+
+.imgCarSearch img {
+    width: 635px;
+}
+
+/* car search style end */
+
+/* news style start */
+.newsSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 133px;
+}
+
+.newsSection h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.news {
+    display: inline-block;
+}
+
+.listNews {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+    width: 46%;
+    float: left;
+    margin-bottom: 25px;
+    margin-right: 52px;
+}
+
+.listNewsImg {
+    margin-right: 8px;
+}
+
+.listNewsDesc {
+    position: relative;
+}
+
+.listNewsDesc h5 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.listNewsDesc p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #676767;
+}
+
+.listNewsDesc .date {
+    font-weight: 400;
+    font-size: 16px;
+    color: #BEBEBE;
+    position: absolute;
+    top: 292px;
+}
+/* news style end */

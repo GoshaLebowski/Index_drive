@@ -1,0 +1,478 @@
+/* user booking style start */
+.sixthSection {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.sixthSection h6 {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.sixthSection h5 {
+    font-family: 'InterExtraBold';
+    font-size: 19px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+
+.auth-form {
+    position: relative;
+}
+
+.dataInfo {
+    min-width: 500px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.form-floating {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.form-control {
+    padding: 12px;
+    padding-left: 55px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    width: 1230px;
+    height: 30px;
+}
+
+.input-form-contrl-bank {
+    padding: 12px;
+    padding-left: 55px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px 0px 0px 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    width: 1169px;
+    height: 30px;
+}
+
+.bankCardsInputAndButton .buttonChangeCard {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 0px 10px 10px 0;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 9px 13px;
+    border: none;
+}
+
+.bankCardsInputAndButton .buttonChangeCard img {
+    padding-top: 2px;
+}
+
+.mb {
+    margin-bottom: 16px;
+}
+
+.form-floating label {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+}
+
+.form-floating-img {
+    width: 31px;
+    position: absolute;
+    left: 13px;
+    top: 43px;
+}
+
+.form-floating-img-user {
+    width: 25px;
+    position: absolute;
+    left: 18px;
+    top: 42px;
+}
+
+.formWithUserData {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+/* user booking style end */
+
+/* auto booking style start */
+.mr-l-id {
+    margin-left: 50px;
+}
+
+.selectAuto-label {
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute; 
+}
+
+.selectAuto-label:hover,
+.selectAuto-label:focus-within {
+    background: hsla(0, 0%, 80%, .14);
+}
+
+.selectAuto-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.selectAuto-design {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background: linear-gradient(to right bottom, hsl(150, 1%, 52%), hsl(0, 0%, 23%));
+    position: relative;
+}
+
+.selectAuto-design::before {
+    content: '';
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+    background: hsl(0deg 0.63% 65.36%);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.selectAuto-input:checked+.selectAuto-design::before {
+    transform: scale(0);
+} 
+
+.seventhSection h5 {
+    font-family: 'InterExtraBold';
+    font-size: 19px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #303030;
+    justify-content: center;
+    margin-bottom: 27px;
+}
+
+.bookingBlock {
+    background: #FFFFFF;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 0 1px rgba(13, 35, 67, .07), 0 5px 15px -8px rgba(13, 35, 67, .4);
+    margin-bottom: 20px;
+    width: 96%;
+    margin-bottom: 50px;
+}
+
+.bookingBlockLeft {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #797979;
+}
+
+.bookingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.bookingInfoImg {
+    width: 406px;
+}
+
+.bookingInfoImg img {
+    width: 586px;
+    height: 277px;
+}
+
+.bookingInfoDesc div {
+    margin-bottom: 15px;
+}
+
+.bookingInfoDesc {
+    font-family: 'InterRegular';
+    width: 462px;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.bookingInfoDesc .nameOfTheCar {
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+.сostOfBooking {
+    font-weight: 600;
+}
+
+.сostOfBooking span {
+    color: #000000;
+}
+
+.bookingBlock {
+    background: #FFFFFF;
+    border: 1px solid #747474;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 0 0 1px rgba(13, 35, 67, .07), 0 5px 15px -8px rgba(13, 35, 67, .4);
+    margin-bottom: 20px;
+    width: 96%;
+    margin-bottom: 50px;
+}
+
+.bookingBlockLeft {
+    font-style: normal;
+    font-size: 15px;
+    line-height: 19px;
+    color: #797979;
+    display: flex;
+}
+
+.bookingInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px;
+}
+
+.bookingInfoImg {
+    width: 406px;
+}
+
+.bookingInfoImg img {
+    width: 586px;
+    height: 277px;
+}
+
+.bookingInfoDesc div {
+    margin-bottom: 15px;
+}
+
+.bookingInfoDesc {
+    font-family: 'InterRegular';
+    width: 462px;
+    font-size: 20px;
+    color: #3E3E3E;
+}
+
+.bookingInfoDesc .nameOfTheCar {
+    font-weight: 700;
+    font-size: 26px;
+    color: #000000;
+}
+
+.сostOfBooking {
+    font-weight: 600;
+}
+
+.сostOfBooking span {
+    color: #000000;
+}
+
+.form-button-delete span {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 12px 50px;
+    border: none;
+}
+
+.form-button-delete span::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+}
+
+.form-button-delete span:hover::before {
+    animation: move-lightFour 0.7s;
+}
+
+@keyframes move-lightFour {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(22em) skewX(-25deg);
+    }
+}
+/* cost and discount style start */
+.costAndDiscount {
+    display: inline-block;
+}
+
+.costAndDiscount .c-a-d-labelContentAll, span {
+    font-family: 'InterExtraBold';
+    font-size: 20px;
+}
+
+.spanCalculatedDiscount, .spanDiscount {
+    color: #409423;
+}
+
+.discountedAmount {
+    position: relative;
+    color: #14326D;
+}
+
+.discountedAmount:before {
+    content: "";
+    border-bottom: 2px solid #14326D;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    transform: rotate(-12deg);
+}
+
+.calculatedDiscount {
+    margin-top: 8px;
+}
+
+.cartDatah5 {
+    margin-top: 27px;
+    margin-bottom: 27px;
+}
+
+.buttonsAuto {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 45px;
+}
+
+.form-button-auto span {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 16px 125px;
+    border: none;
+}
+
+.form-button-auto span::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+} 
+
+.form-button-auto span:hover::before {
+    animation: move-lightFive 0.7s;
+}
+
+@keyframes move-lightFive {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(26em) skewX(-25deg);
+    }
+}
+
+.form-button-auto button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 16px 125px;
+    border: none;
+}
+
+.form-button-auto button::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2em) skewX(-25deg);
+} 
+
+.form-button-auto button:hover::before {
+    animation: move-buttonlight 0.8s;
+}
+
+@keyframes move-buttonlight {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(27em) skewX(-25deg);
+    }
+}
+
+.bookingSpan {
+    font-family: 'Ubuntu', sans-serif;
+}
+/* auto booking style end */

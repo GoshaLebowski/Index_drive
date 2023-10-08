@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/global.css">
+    <link rel="stylesheet" href="style/modals/modalIndex.css">
+    <link rel="stylesheet" href="style/modals/errors&done.css">
+    <link rel="stylesheet" href="style/adaptive/modals/errors&done.css">
+    <link rel="stylesheet" href="style/adaptive/index.css">
+    <link rel="stylesheet" href="style/adaptive/modals/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="icon" href="img/logo/icon.png">
+    <title>INDEX DRIVE</title>
+</head>
+
+<div class="modalScrin" onclick="authModalActive()">
+    <div class="modalWindow" onclick="event.stopPropagation()">
+        <img src="img/icon/crossCloses.png" class="close-form" onclick="authModalActive()" alt="">
+        <h6 class="modalWindowHead">Войти</h6>
+        <form method="post" name="logForm" class="auth-form">
+            <div class="form-floating mb">
+                <label for="floatingInputNumberLog">Номер телефона</label>
+                <input type="text" class="form-control numberFormat" name="numberLog" id="floatingInputNumberLog"
+                    placeholder="Введите номер телефона"></input>
+                <img class="form-floating-img" src="img/icon/iconTelephone.svg" alt="">
+            </div>
+            <div class="form-floating mb">
+                <label for="floatingPasswordLog">Пароль</label>
+                <input type="password" class="form-control floatingPassword" name="passLog" id="floatingPasswordLog"
+                    placeholder="Введите пароль">
+                <img class="form-floating-img" src="img/icon/iconPassword.svg" alt="">
+                <img class="form-floating-img-pasword" id="img-paswordOne" src="img/icon/eye-slashpassvord.svg" alt=""
+                    onclick="TogglePasword()">
+            </div>
+
+            <div class="form-button-a-cont-auth">
+                <button class="form-button-auth" type="submit">Войти</button>
+            </div>
+
+            <p class="form-text-who">Ещё не зерегистрированы? <a onclick="registerModalActive()">Зарегистрироваться</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="modalScrinRegister" onclick="registerModalActive()">
+    <div class="modalWindow" onclick="event.stopPropagation()">
+        <img src="img/icon/crossCloses.png" class="close-form" onclick="registerModalActive()" alt="">
+        <h6 class="modalWindowHead">Регистрация</h6>
+        <form method="post" name="regForm" class="auth-form">
+            <div class="form-floating mb">
+                <label for="floatingInputFullNameReg">Фамилия Имя Отчество</label>
+                <input type="text" class="form-control" name="fullNameReg" id="floatingInputFullNameReg"
+                    placeholder="Введите ФИО"></input>
+                <img class="form-floating-img-user" src="img/icon/iconUser.svg" alt="">
+            </div>
+            <div class="form-floating mb">
+                <label for="floatingInputPassportReg">Паспортные данные</label>
+                <input type="text" class="form-control pasportFormat" name="passportReg" id="floatingInputPassportReg"
+                    placeholder="Введите паспортные данные"></input>
+                <img class="form-floating-img" src="img/icon/iconPassport.svg" alt="">
+            </div>
+            <div class="form-floating mb">
+                <label for="floatingInputNumberReg">Номер телефона</label>
+                <input type="text" class="form-control numberFormat" name="numberReg" id="floatingInputNumberReg"
+                    placeholder="Введите номер телефона"></input>
+                <img class="form-floating-img" src="img/icon/iconTelephone.svg" alt="">
+            </div>
+            <div class="form-floating mb">
+                <label for="floatingInputDateOfBirth">Дата рождения</label>
+                <input type="date" class="form-control dateFormat" name="dateOfBirthReg" id="floatingInputDateOfBirth"
+                    placeholder="Введите дату рождения"></input>
+                <img class="form-floating-img" src="img/icon/dateOfBirth.svg" alt="">
+            </div>
+            <div class="form-floating mb">
+                <label for="floatingPasswordReg">Пароль</label>
+                <input type="password" class="form-control floatingPassword1" name="passwordReg"
+                    id="floatingPasswordReg" placeholder="Введите пароль">
+                <img class="form-floating-img" src="img/icon/iconPassword.svg" alt="">
+                <img class="form-floating-img-pasword" src="img/icon/eye-slashpassvord.svg" alt="" id="img-paswordTwo"
+                    onclick="TogglePasword1()">
+            </div>
+            <div class="form-floating mb">
+                <label for="repeatFloatingPasswordReg">Повторите пароль</label>
+                <input type="password" class="form-control floatingPassword2" name="repeatPasswordReg"
+                    id="repeatFloatingPasswordReg" name="repeatPassword" placeholder="Введите пароль ещё раз">
+                <img class="form-floating-img" src="img/icon/iconPassword.svg" alt="">
+                <img class="form-floating-img-pasword" src="img/icon/eye-slashpassvord.svg" alt="" id="img-paswordThee"
+                    onclick="TogglePasword2()">
+            </div>
+
+            <div class="form-button-a-cont-reg">
+                <button class="form-button-reg" type="submit">Зарегистрироваться</button>
+            </div>
+
+            <p class="form-text-who">Уже зарегистрированы? <a onclick="authModalActive()">Войти</a></p>
+        </form>
+    </div>
+</div>
+
+<div class="modalDoneUser">
+    <div class="modalWindowDone" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Выполнено!</h6>
+        <div class="desсDoneUser"></div>
+    </div>
+</div>
+
+<div class="modalErrorsUser">
+    <div class="modalWindowErors" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Ошибка!</h6>
+        <div class="desсErrorsUser"></div>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <div class="container">
+            <a class="logo"></a>
+            <div class="nav-text">
+                <a href="user/user.html">
+                    <div class="auth-text">Страница пользователя</div>
+                </a>
+                <div class="auth-text" onclick="registerModalActive()">Вход</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <!-- image slider start -->
+            <div class="sliderSection">
+                <div class="slides">
+                    <!-- radio buttons start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- radio buttons end -->
+                    <!-- slider images start -->
+                    <div class="slide first">
+                        <div class="contentSlideFirst">
+                            <p class="textSlideFirst">Более низкая стоимость поездки по сравнению с такси</p>
+                            <img src="img/slider/photo-slide-1.png" class="imgSlideFirst" alt="Картинка первого слайда">
+                        </div>
+                    </div>
+                    <div class="slide second">
+                        <div class="contentSlideSecond">
+                            <p class="textSlideSecond">Значительно меньшие затраты, чем на владение собственным
+                                автомобилем</p>
+                            <img src="img/slider/photo-slide-2.png" class="imgSlideSecond"
+                                alt="Картинка первого слайда">
+                        </div>
+                    </div>
+                    <div class="slide third">
+                        <div class="contentSlideThird">
+                            <p class="textSlideThird">Более комфортные условия по сравнению с общественным транспортом
+                            </p>
+                            <img src="img/slider/photo-slide-3.png" class="imgSlideThird" alt="Картинка первого слайда">
+                        </div>
+                    </div>
+                    <!-- slider images end -->
+                    <!-- automatic navigation start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- automatic navigation end -->
+                    <!-- manual navigation start -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                    <!-- manual navigation end -->
+                </div>
+            </div>
+            <!-- image slider end -->
+        </div>
+    </section>
+
+    <section class="twoSection">
+        <div class="container">
+            <h6>Примущества компании</h6>
+            <div class="articleOfQualities">
+                <div class="characteristics">
+                    <article>
+                        <h2>147+</h2>
+                        <p>авто в наличии</p>
+                    </article>
+                    <article>
+                        <h2>5+</h2>
+                        <p>лет на рынке</p>
+                    </article>
+                    <article>
+                        <h2>14+</h2>
+                        <p>рабочих рук</p>
+                    </article>
+                    <article>
+                        <h2>24/7</h2>
+                        <p>клиентская поддержка</p>
+                    </article>
+                    <article>
+                        <h2>3</h2>
+                        <p>мобильных приложения</p>
+                    </article>
+                </div>
+                <div class="consultationButton">
+                    <a href="#">Записаться на консультацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="threeSection">
+        <div class="container">
+            <h6>Поиск автомобилей</h6>
+            <div class="carSearch">
+                <div class="formCarSearch">
+                    <form action="#">
+                        <div class="styleCarSelect">
+                            <select name="carSelect">
+                                <option value="" hidden disabled selected>Выберeте класс</option>
+                                <option value="">Эконом</option>
+                                <option value="">Премиум</option>
+                            </select>
+                        </div>
+                        <div class="styleCarSelect">
+                            <select name="carSelect">
+                                <option value="" hidden disabled selected>Выберeте марку</option>
+                                <option value="">Ferrari</option>
+                                <option value="">Buick</option>
+                            </select>
+                        </div>
+                        <div class="styleCarSelect">
+                            <select name="carSelect">
+                                <option value="" hidden disabled selected>Выберeте модель</option>
+                                <option value="">Berlinetta</option>
+                                <option value="">Avista</option>
+                            </select>
+                        </div>
+                        <div class="buttonCarSearch">
+                            <button type="submit">Поиск автомобиля</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="imgCarSearch">
+                    <img src="img/car-search/car-search.png" alt="какая то машина">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsSection">
+        <div class="container">
+            <h6>Новости</h6>
+            <div class="news">
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="img/news/news1.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>В России вынесли первый приговор за продажу аккаунтов каршеринга</h5>
+                        <p>В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга.
+                            Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="img/news/news2.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>Программа поддержки каршеринга не заработала из-за российского телематического оборудования
+                        </h5>
+                        <p>25 августа 2020 года стало известно о том, что программа поддержки каршеринга.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="img/news/news3.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>Мошенничество с данными клиентов</h5>
+                        <p>По сообщениям на июль 2020 г каршеринг становится отличным помощником для мошенников.
+                            С помощью селфи клиентов с паспортом на людей берут кредиты в микрофинансовых
+                            компаниях.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="img/news/news4.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>Столичный каршеринг обвинил Роспотребнадзор в блокировке деятельности</h5>
+                        <p>Каршеринг не может возобновить работу по докоронавирусному сценарию из-за отсутствия
+                            предписаний
+                            Роспотребнадзора. Представители сервисов обвинили.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footerBlock">
+                <a class="numberFoot" href="">8 (800) 110-10-10</a>
+                <a href="">ООО «Индекс драйв», ОГРН</a>
+            </div>
+            <div class="footerBlock fB">
+                <h6>Личный кабинет</h6>
+                <a onclick="registerModalActive()">Регистрация</a>
+                <a onclick="authModalActive()">Авторизация</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <!-- frontend functionality on this page -->
+    <script src="js/frontend/index.js"></script>
+    <script src="js/frontend/maskFormat.js"></script>
+    <script src="js/frontend/slider.js"></script>
+</body>
+
+</html>

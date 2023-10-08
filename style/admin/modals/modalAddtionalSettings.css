@@ -1,0 +1,281 @@
+.modalMarkAuto {
+    display: none;
+}
+
+.modalMarkAuto.active {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalMarkAutoWindow {
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modalMarkAutoWindowHead {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/*  */
+
+.modalModalAuto {
+    display: none;
+}
+
+.modalModalAuto.active {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalModalAutoWindow {
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modalModalAutoWindowHead {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/*  */
+
+.modalClassAuto {
+    display: none;
+}
+
+.modalClassAuto.active {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalClassAutoWindow {
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modalClassAutoWindowHead {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/*  */
+
+.modalStatusAuto {
+    display: none;
+}
+
+.modalStatusAuto.active {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalStatusAutoWindow {
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modalStatusAutoWindowHead {
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/*  */
+
+.modalBranchesAuto {
+    display: none;
+}
+
+.modalBranchesAuto.active {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+}
+
+.modalBranchesAutoWindow {
+    min-width: 500px;
+    padding: 40px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modalBranchesAutoWindowHead { 
+    font-family: 'InterBold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.895px;
+    line-height: 33px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+/*  */
+
+.formAddNews {
+    position: relative;
+}
+
+.form-floatingAddNews {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.form-floatingAddNews label {
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #323232;
+    margin-bottom: 9px;
+}
+
+.form-inputAddNews {
+    padding: 12px;
+    padding-left: 40px;
+    background-color: transparent;
+    border: 1px solid #D1D1D1;
+    border-radius: 10px;
+    transition: all .15s;
+    outline: none;
+    font-family: 'InterRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15.94px;
+    line-height: 19px;
+    color: #797979;
+    resize: none;
+    margin-bottom: 20px;
+    width: 397px;
+}
+
+.h-form-inputAddNews {
+    height: 197px;
+}
+
+.form-imgAddNews {
+    width: 25px;
+    position: absolute;
+    left: 10px;
+    top: 38px;
+}
+
+.close-form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.buttonAddNews {
+    width: 377px;
+    margin: auto;   
+}
+
+.buttonAddNews button {
+    position: relative;
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 19px;
+    display: inline-block;
+    padding: 14px 136px;
+    border: none;
+}
+
+.buttonAddNews button::before {
+    position: absolute;
+    content: '';
+    width: 1.5em;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.6);
+    transform: translateX(-2.3em) skewX(-25deg);
+}
+
+.buttonAddNews button:hover::before {
+    animation: move-buttonAddNews 0.7s;
+}
+
+@keyframes move-buttonAddNews {
+    0% {
+        transform: translateX(-2em) skewX(-25deg);
+    }
+
+    100% {
+        transform: translateX(21em) skewX(-25deg);
+    }
+}

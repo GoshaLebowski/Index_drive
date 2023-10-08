@@ -1,0 +1,112 @@
+.modalUserProfile {
+    display: none;
+}
+
+.modalUserProfile.active {
+    width: 99vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+}
+
+.modalUserProfileWindow {
+    width: 390px;
+    padding: 30px;
+    background: #FFFFFF;
+    margin-top: 100px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+
+.modalUserProfile .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.modalUserProfileWindowInfoAvatar {
+    background: linear-gradient(84.91deg, #000000 -0.19%, #7C7C7C 127.61%);
+    width: 70px;
+    height: 70px;
+    font-size: 35px;
+    border-radius: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 16px;
+}
+
+.modalUserProfileWindowInfo {
+    display: flex;
+}
+
+.modalUserProfileWindowInfoOne {
+    display: flex;
+    align-items: center;
+    color: #ff6f6f;
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+    justify-content: flex-end;
+}
+
+.modalUserProfileWindowInfoListName {
+    font-size: 25px;
+}
+
+.modalUserProfileWindowInfoListNumber {
+    font-size: 25px;
+    margin: 3px 0;
+}
+
+.modalUserProfileWindowInfoListEditProfile {
+    font-family: 'InterBold';
+    font-size: 19px;
+    background: #525252;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modalUserProfileWindowInfoListEditProfile img {
+    margin-right: 6px;
+    width: 30px;
+}
+
+.roleProfile {
+    font-size: 16px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.modalUserProfileWindowButton {
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    display: block;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.modalUserProfileWindowButton button {
+    border: 2px solid #433F3F;
+    border-radius: 10px;
+    width: 100%;
+    background: -webkit-linear-gradient(56deg, #000000 -0.19%, #7C7C7C 127.61%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    background-clip: text;
+    height: 100%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+}

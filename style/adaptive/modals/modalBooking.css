@@ -1,0 +1,219 @@
+@media (max-width: 600px) {
+    .modalBookingWindow {
+        padding: 0px;
+        padding-top: 26px;
+        padding-bottom: 18px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .buttonBooking button::before {
+        display: none;
+    }
+
+    .butAddCarBooking button::before {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    .modalBookingWindow {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .styleBookingSelect {
+        width: 433px;
+    }
+
+    .styleBookingSelect select {
+        width: 435px;
+    }
+
+    .form-floatingBooking {
+        width: 433px;
+    }
+
+    .form-inputBooking {
+        width: 380px;
+    }
+
+    .buttonBooking {
+        width: 86%;
+    }
+
+    .buttonBooking button {
+        padding: 14px 125.6px;
+    }
+
+    .butAddCarBooking {
+        width: 86%;
+    }
+
+    .butAddCarBooking button {
+        padding: 14px 168px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalBookingWindow {
+        min-width: 430px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .styleBookingSelect {
+        width: 405px;
+    }
+
+    .styleBookingSelect select {
+        width: 405px;
+    }
+
+    .form-floatingBooking {
+        width: 405px;
+    }
+
+    .form-inputBooking {
+        width: 351px;
+        font-size: 15.50px;
+    }
+
+    .buttonBooking {
+        width: 94%;
+    }
+
+    .buttonBooking button {
+        padding: 14px 112.6px;
+    }
+
+    .butAddCarBooking {
+        width: 94%;
+    }
+
+    .butAddCarBooking button {
+        padding: 14px 155px;
+    }
+}
+
+@media (max-width: 414px) {
+    .modalBookingWindow {
+        min-width: 400px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .styleBookingSelect {
+        width: 337px;
+    }
+
+    .styleBookingSelect select {
+        width: 337px;
+    }
+
+    .form-floatingBooking {
+        width: 336px;
+    }
+
+    .form-inputBooking {
+        width: 282px;
+    }
+
+    .buttonBooking {
+        width: 338px;
+    }
+
+    .buttonBooking button {
+        padding: 14px 79.6px;   
+    }
+
+    .butAddCarBooking {
+        width: 335px;
+    }
+
+    .butAddCarBooking button {
+        padding: 14px 122px;
+    }
+}
+
+@media (max-width: 395px) {
+    .modalBookingWindow {
+        min-width: 371px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modalBookingWindow {
+        min-width: 355px;
+    }
+
+    .styleBookingSelect {
+        width: 325px;
+    }
+
+    .styleBookingSelect select {
+        width: 325px;
+    }
+
+    .form-floatingBooking {
+        width: 322px;
+    }
+
+    .form-inputBooking {
+        width: 268px;
+    }
+
+    .buttonBooking {
+        width: 318px;
+    }
+
+    .buttonBooking button {
+        padding: 14px 69.6px;
+    }
+
+    .butAddCarBooking {
+        width: 317px;
+    }
+
+    .butAddCarBooking button {
+        padding: 14px 112px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalBookingWindow {
+        min-width: 319px;
+    }
+
+    .styleBookingSelect select {
+        width: 300px;
+    }
+
+    .styleBookingSelect {
+        width: 300px;
+    }
+
+    .form-floatingBooking {
+        width: 296px;
+    }
+
+    .form-inputBooking {
+        width: 243px;
+    }
+
+    .buttonBooking {
+        width: 294px;
+    }
+
+    .buttonBooking button {
+        padding: 14px 57.599999999999994px;
+    }
+
+    .butAddCarBooking {
+        width: 295px;
+    }
+
+    .butAddCarBooking button {
+        padding: 14px 101px;
+    }
+}

@@ -1,0 +1,124 @@
+@media (max-width: 1200px) {
+    .modalWindowBranches {
+        width: 1150px;
+        padding: 0px;
+    }
+
+    .block-of-free-machines {
+        padding: 18px;
+    }
+
+    .modalWindowBranchesHead {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .modalWindowBranches {
+        width: 520px;
+        padding: 0px;
+    }
+
+    .modalWindowBranchesHead {
+        font-size: 22px;
+    }
+
+    .allContentFreeMachines {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .block-of-free-machines {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 9px;
+    }
+
+    .block-of-free-machines img {
+        width: 290px;
+        height: 141px;
+    }
+
+    .full-content-branches-modal {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 540px) {
+    .divWindowBranchesHead {
+        text-align: center;
+    }
+
+    .modalWindowBranchesHead {
+        margin-top: 37px;
+    }
+
+    .modalWindowBranches {
+        width: 440px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modalWindowBranchesHead {
+        width: 268px;
+        margin: auto;
+        margin-top: 19px;
+        margin-bottom: 20px;
+    }
+
+    .modalWindowBranches {
+        width: 405px;
+    }
+}
+
+@media (max-width: 395px) {
+    .block-of-free-machines img {
+        width: 282px;
+        height: 127px;
+    }
+
+    .modalWindowBranchesHead {
+        width: 237px;
+        margin: auto;
+        margin-top: 38px;
+        margin-bottom: 20px;
+    }
+
+    .modalWindowBranches {
+        width: 375px;
+    }
+
+    .block-of-free-machines {
+        padding: 7px;
+        width: 289px;
+    }
+
+    .freeMachinesDesc {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 375px) {
+    .modalWindowBranches {
+        width: 359px;
+    }
+}
+
+@media (max-width: 320px) {
+    .modalWindowBranches {
+        width: 306px;
+    }
+
+    .block-of-free-machines {
+        padding: 7px;
+        width: 269px;
+    }
+
+    .block-of-free-machines img {
+        width: 260px;
+        height: 119px;
+    }
+}

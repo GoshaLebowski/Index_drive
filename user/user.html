@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/user.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/modals/modalCard.css">
+    <link rel="stylesheet" href="../style/modals/errors&done.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/errors&done.css">
+    <link rel="stylesheet" href="../style/adaptive/index.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/modalNav.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/userModal.css">
+    <link rel="stylesheet" href="../style/adaptive/modals/bankCard.css">
+    <link rel="stylesheet" href="../style/adaptive/nav.css"> 
+    <link rel="stylesheet" href="../style/adaptive/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="icon" href="../img/logo/icon.png">
+    <title>INDEX DRIVE</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoAvatar">Г</div>
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Здравствуйте, Георгий</b></p>
+                    <p class="modalUserProfileWindowInfoListNumber">+79999999999</p>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/iconUser.svg" alt="">Редактировать профиль</a>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/scores.svg" alt="">Баллы: 5</a>
+                    <a href="profile.html" class="modalUserProfileWindowInfoListEditProfile"><img
+                            src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                </div>
+            </div>
+            <a class="modalUserProfileWindowButton"><button onclick="cardsModalActive()">Банковские карты</button></a>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="selectBankCards" onclick="cardsModalActive()">
+    <div class="modalWindowCards" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form-cards" onclick="removeModalActive()" alt="">
+        <h6 class="modalWindowCardsHead">Список банковских карт</h6>
+        <form method="post" name="LogForm" class="auth-form-cards">
+            <div class="form-floating-cards mb-cards">
+                <img class="form-floating-cards-img" src="../img/cards/mastercard.png" alt="">
+                <div class="bankCardsInputAndButton">
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input id-check" name="rad">
+                        <div class="rad-design"></div>
+                    </label>
+                    <input type="text" class="form-control-cards my-input-card inputDisabled" name="bankCard_1" id="bankCard_1" disabled value="****4444">
+                    <button class="buttonDeleteCard"><img src="../img/button/minus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="form-floating-cards mb-cards">
+                <img class="form-floating-cards-img" src="../img/cards/visa.png" alt="">
+                <div class="bankCardsInputAndButton">
+                    <label class="rad-label">
+                        <input type="radio" class="rad-input id-check" name="rad">
+                        <div class="rad-design"></div>
+                    </label>
+                    <input type="text" class="form-control-cards my-input-card inputDisabled" name="bankCard_2" id="bankCard_2" disabled value="****3463">
+                    <button class="buttonDeleteCard"><img src="../img/button/minus.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="buttonsCards">
+                <div class="form-button-add-a-card" onclick="cardModalCreate()">    
+                    <span>Добавить карту</span>
+                </div>
+
+                <div class="form-button-select-a-card">
+                    <button type="submit">Выбрать карту</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="createBankCards" onclick="cardModalCreate()">
+    <div class="modalWindowCardsCreate" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form-cards" onclick="cardModalRemove()" alt="">
+        <h6 class="modalWindowCardsHead">Список банковских карт</h6>
+        <form method="post" name="LogForm" class="auth-form-cards">
+            <div class="full-content-card-creation">
+                <div class="f-c-gridContainer">
+                    <div class="img-bankCard">
+                        <img class="imgCardFront" src="../img/cards/front part of the bank card.png">
+                        <img class="imgCardBack" src="../img/cards/back of the bank card.png">
+                    </div>
+                    <div class="f-c-typeCard"></div>
+                    <div class="f-c-inputOne">
+                        <img class="f-c-iconToInputNumberCard" id="iconToInputNumberCard" src="../img/icon/iconBankCard.svg" alt="Иконки типов банковских карт">
+                        <input type="text" class="f-c-inputStyleNumberCard cardFormat" onchange="showMe(value)"
+                            placeholder="Номер карты" id="inputNamberCard" name="numberCard" value="2222 2222 2222 2222">
+                    </div>
+                    <div class="f-c-inputTwo">
+                        <div>
+                            <img class="f-c-iconToInputNameCard" src="../img/icon/iconUser.svg" alt="">
+                            <input type="text" class="f-c-inputStyleNameCard" placeholder="Имя (как на карте)"
+                               id="inputUserCard" name="userCard" value="GOSHA LOBOV">
+                        </div>
+                        <div>
+                            <img class="f-c-iconToInputDateCard" src="../img/icon/iconDate.svg" alt="">
+                            <input type="text" class="f-c-inputStyleDateCard dataCardFormat" placeholder="ММ/ГГ"
+                               id="inputDateCard" name="dateCard" value="12/32">
+                        </div>
+                    </div>
+                    <div class="f-c-inputThree">
+                        <img class="f-c-iconToInputCVCCard" src="../img/icon/iconCastle.svg" alt="">
+                        <input type="text" class="f-c-iconToInputCVC cvcFormat" placeholder="CVC" id="inputCvcCard" name="CvcCard" value="228">
+                    </div>
+                </div>
+            </div>
+            <div class="buttonsCardsCreate">
+                <div class="form-button-select-a-card">
+                    <button type="submit">Добавить карту</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="modalDoneUser">
+    <div class="modalWindowDone" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Выполнено!</h6>
+        <div class="desсDoneUser"></div>
+    </div>
+</div>
+
+<div class="modalErrorsUser">
+    <div class="modalWindowErors" onclick="event.stopPropagation()">
+        <img src="../img/icon/crossCloses.png" class="close-form" alt="">
+        <h6 class="modalWindowErrorsHead">Ошибка!</h6>
+        <div class="desсErrorsUser"></div>
+    </div>
+</div>
+
+<body>
+    <nav class="mainNav" id="navStacky">
+        <div class="container">
+            <a href="user.html" class="logo"></a>
+            <div class="nav-text">
+                <a href="booking.html">
+                    <div class="auth-text">Бронирования</div>
+                </a>
+                <a href="history.html">
+                    <div class="auth-text">История</div>
+                </a>
+                <a href="branches.html">
+                    <div class="auth-text">Филиалы</div>
+                </a>
+                <a href="../admin/adminPanel.html">
+                    <div class="auth-text">Админ панель</div>
+                </a>
+                <div class="hamburger">
+                    <div class="menu-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+                <div class="nav-user-icon" onclick="ProfileModalActive()">Г</div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="menu">
+        <div class="style-text">
+            <li><a href="booking.html">Бронирования</a></li>
+            <li><a href="history.html">История</a></li>
+            <li><a href="branches.html">Филиалы</a></li>
+        </div>
+    </div>
+    
+    <section class="mainSection">
+        <div class="container">
+            <!-- image slider start -->
+            <div class="sliderSection">
+                <div class="slides">
+                    <!-- radio buttons start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!-- radio buttons end -->
+                    <!-- slider images start -->
+                    <div class="slide first">
+                        <div class="contentSlideFirst">
+                            <p class="textSlideFirst">Более низкая стоимость поездки по сравнению с такси</p>
+                            <img src="../img/slider/photo-slide-1.png" class="imgSlideFirst"
+                                alt="Картинка первого слайда">
+                        </div>
+                    </div>
+                    <div class="slide second">
+                        <div class="contentSlideSecond">
+                            <p class="textSlideSecond">Значительно меньшие затраты, чем на владение собственным
+                                автомобилем</p>
+                            <img src="../img/slider/photo-slide-2.png" class="imgSlideSecond"
+                                alt="Картинка первого слайда">
+                        </div>
+                    </div>
+                    <div class="slide third">
+                        <div class="contentSlideThird">
+                            <p class="textSlideThird">Более комфортные условия по сравнению с общественным транспортом
+                            </p>
+                            <img src="../img/slider/photo-slide-3.png" class="imgSlideThird"
+                                alt="Картинка первого слайда">
+                        </div>
+                    </div>
+                    <!-- slider images end -->
+                    <!-- automatic navigation start -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                    <!-- automatic navigation end -->
+                    <!-- manual navigation start -->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                    </div>
+                    <!-- manual navigation end -->
+                </div>
+            </div>
+            <!-- image slider end -->
+        </div>
+    </section>
+
+    <section class="twoSection">
+        <div class="container">
+            <h6>Примущества компании</h6>
+            <div class="articleOfQualities">
+                <div class="characteristics">
+                    <article>
+                        <h2>147+</h2>
+                        <p>авто в наличии</p>
+                    </article>
+                    <article>
+                        <h2>5+</h2>
+                        <p>лет на рынке</p>
+                    </article>
+                    <article>
+                        <h2>14+</h2>
+                        <p>рабочих рук</p>
+                    </article>
+                    <article>
+                        <h2>24/7</h2>
+                        <p>клиентская поддержка</p>
+                    </article>
+                    <article>
+                        <h2>3</h2>
+                        <p>мобильных приложения</p>
+                    </article>
+                </div>
+                <div class="consultationButton">
+                    <a href="#">Записаться на консультацию</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="threeSection">
+        <div class="container">
+            <h6>Поиск автомобилей</h6>
+            <div class="carSearch">
+                <div class="formCarSearch">
+                    <form action="#">
+                        <div class="styleCarSelect">
+                            <select name="carSelect">
+                                <option value="" hidden disabled selected>Выберeте класс</option>
+                                <option value="">Эконом</option>
+                                <option value="">Премиум</option>
+                            </select>
+                        </div>
+                        <div class="styleCarSelect">
+                            <select name="carSelect">
+                                <option value="" hidden disabled selected>Выберeте марку</option>
+                                <option value="">Ferrari</option>
+                                <option value="">Buick</option>
+                            </select>
+                        </div>
+                        <div class="styleCarSelect">
+                            <select name="carSelect">
+                                <option value="" hidden disabled selected>Выберeте модель</option>
+                                <option value="">Berlinetta</option>
+                                <option value="">Avista</option>
+                            </select>
+                        </div>
+                        <div class="buttonCarSearch">
+                            <button type="submit">Поиск автомобиля</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="imgCarSearch">
+                    <img src="../img/car-search/car-search.png" alt="какая то машина">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsSection">
+        <div class="container">
+            <h6>Новости</h6>
+            <div class="news">
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news1.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>В России вынесли первый приговор за продажу аккаунтов каршеринга</h5>
+                        <p>В конце 2020 года в России вынесли первый приговор за продажу аккаунтов каршеринга.
+                            Приморский районный суд Петербурга оштрафовал гражданина РФ Романа Амелина.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news2.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>Программа поддержки каршеринга не заработала из-за российского телематического оборудования
+                        </h5>
+                        <p>25 августа 2020 года стало известно о том, что программа поддержки каршеринга.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news3.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>Мошенничество с данными клиентов</h5>
+                        <p>По сообщениям на июль 2020 г каршеринг становится отличным помощником для мошенников.
+                            С помощью селфи клиентов с паспортом на людей берут кредиты в микрофинансовых
+                            компаниях.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+                <div class="listNews">
+                    <div class="listNewsImg">
+                        <img src="../img/news/news4.jpg" alt="">
+                    </div>
+                    <div class="listNewsDesc">
+                        <h5>Столичный каршеринг обвинил Роспотребнадзор в блокировке деятельности</h5>
+                        <p>Каршеринг не может возобновить работу по докоронавирусному сценарию из-за отсутствия
+                            предписаний
+                            Роспотребнадзора. Представители сервисов обвинили.......</p>
+                        <p class="date">12.03.20</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-user">
+        <div class="container">
+            <div class="footerBlock-user">
+                <a class="numberFoot-user" href="">8 (800) 110-10-10</a>
+                <a href="">ООО «Индекс драйв», ОГРН</a>
+            </div>
+            <div class="footerBlock-user">
+                <h6>Личный кабинет</h6>
+                <a href="profile.html">Личный кабинет</a>
+            </div>
+            <div class="footerBlock-user">
+                <h6>Информация</h6>
+                <a>Акции</a>
+                <a href="booking.html">Бронирования</a>
+                <a href="history.html">История</a>
+                <a>Новости</a>
+                <a href="branches.html">Филиалы</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<!-- frontend functionality on this page -->
+<script src="../js/frontend/nav.js"></script>
+<script src="../js/frontend/slider.js"></script>
+<script src="../js/frontend/modalCards.js"></script>
+<script src="../js/frontend/maskFormat.js"></script>
+<script src="../js/frontend/modalUser.js"></script>
+
+</html>

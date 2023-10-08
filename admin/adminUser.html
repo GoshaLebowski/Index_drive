@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/modals/modalUser.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/admin/adminUsers.css">
+    <title>INDEX DRIVE - управление пользователями</title>
+</head>
+
+<div class="modalUserProfile" onclick="ProfileModalActive()">
+    <div class="container">
+        <div class="modalUserProfileWindow" onclick="event.stopPropagation()">
+            <div class="modalUserProfileWindowInfo">
+                <div class="modalUserProfileWindowInfoList">
+                    <p class="modalUserProfileWindowInfoListName"><b>Admin ID:#2325</b></p>
+                </div>
+            </div>
+            <a href="#" class="modalUserProfileWindowButton"><button>Выйти</button></a>
+        </div>
+    </div>
+</div>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="adminPanel.html" class="logo"></a>
+            <div class="nav-text">
+                <div class="nav-user-icon" onclick="ProfileModalActive()">admin</div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="mainSection">
+        <div class="container">
+            <h6>Управление пользователями</h6>
+
+            <div class="centerSearch">
+                <div class="bankCardsInputAndButton">
+                    <input type="text" class="input-form-contrl-bank" name="number" id="floatingInputBankCard"
+                        placeholder="Поиск" value="">
+                    <div class="buttonChangeCard" onclick="cardsModalActive()">
+                        <img src="../img/button/search.svg">
+                    </div>
+                </div>
+            </div>
+
+            <p class="countUser">Кол-во пользователями: 3</p>
+
+            <div class="usersInfoBlock">
+                <div class="usersInfo">
+                    <div class="userInformation">
+                        <div class="userInformationInfo">
+                            <div class="userInformationAvatar">
+                                <div class="userInformationInfoAvatar">Г</div>
+                            </div>
+                            <div class="userInformationInfoList">
+                                <p class="userInformationInfoListName"><b>Лобов Георгий Александрович</b></p>
+                                <p class="userInformationInfoListNumber">+79999999999</p>
+                                <a href="#" class="userInformationInfoListEditProfile"><img src="../img/icon/scores.svg"
+                                        alt="">Баллы: 5</a>
+                                <a href="#" class="userInformationInfoListEditProfile"><img
+                                        src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="viewingAprofile.html" class="buttonViewingAndButton">
+                            <button>Смотреть профиль</button>
+                        </a>
+                        <a class="buttonViewingAndButton">
+                            <button>Удалить</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="usersInfoBlock">
+                <div class="usersInfo">
+                    <div class="userInformation">
+                        <div class="userInformationInfo">
+                            <div class="userInformationAvatar">
+                                <div class="userInformationInfoAvatar">Г</div>
+                            </div>
+                            <div class="userInformationInfoList">
+                                <p class="userInformationInfoListName"><b>Лобов Георгий Александрович</b></p>
+                                <p class="userInformationInfoListNumber">+79999999999</p>
+                                <a href="#" class="userInformationInfoListEditProfile"><img src="../img/icon/scores.svg"
+                                        alt="">Баллы: 5</a>
+                                <a href="#" class="userInformationInfoListEditProfile"><img
+                                        src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="viewingAprofile.html" class="buttonViewingAndButton">
+                            <button>Смотреть профиль</button>
+                        </a>
+                        <a class="buttonViewingAndButton">
+                            <button>Удалить</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="usersInfoBlock">
+                <div class="usersInfo">
+                    <div class="userInformation">
+                        <div class="userInformationInfo">
+                            <div class="userInformationAvatar">
+                                <div class="userInformationInfoAvatar">Г</div>
+                            </div>
+                            <div class="userInformationInfoList">
+                                <p class="userInformationInfoListName"><b>Лобов Георгий Александрович</b></p>
+                                <p class="userInformationInfoListNumber">+79999999999</p>
+                                <a href="#" class="userInformationInfoListEditProfile"><img src="../img/icon/scores.svg"
+                                        alt="">Баллы: 5</a>
+                                <a href="#" class="userInformationInfoListEditProfile"><img
+                                        src="../img/icon/booking.svg" alt="">Кол-во бронирований: 2</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="viewingAprofile.html" class="buttonViewingAndButton">
+                            <button>Смотреть профиль</button>
+                        </a>
+                        <a class="buttonViewingAndButton">
+                            <button>Удалить</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="../js/frontend/admin/adminPanel.js"></script>
+
+</html>
